@@ -1,0 +1,842 @@
+{
+    "v2018.4": {
+        "tests.physicalvalidation.physical_validation.kinetic_energy": {
+            "mb_ensemble": [
+                "data",
+                "alpha",
+                "verbosity",
+                "screen",
+                "filename"
+            ],
+            "equipartition": [
+                "data",
+                "dtemp",
+                "distribution",
+                "alpha",
+                "molec_groups",
+                "random_divisions",
+                "random_groups",
+                "verbosity",
+                "screen",
+                "filename"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation.integrator": {
+            "convergence": [
+                "simulations",
+                "convergence_test",
+                "verbose",
+                "slope",
+                "screen",
+                "filename"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation.ensemble": {
+            "check": [
+                "data_sim_one",
+                "data_sim_two",
+                "total_energy",
+                "screen",
+                "filename",
+                "verbosity"
+            ],
+            "estimate_interval": [
+                "data",
+                "verbosity",
+                "total_energy"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation": {},
+        "tests.physicalvalidation.physical_validation.util.kinetic_energy": {
+            "isclose": [
+                "a",
+                "b",
+                "rel_tol",
+                "abs_tol"
+            ],
+            "temperature": [
+                "kin",
+                "ndof",
+                "kb"
+            ],
+            "check_mb_ensemble": [
+                "kin",
+                "temp",
+                "ndof",
+                "alpha",
+                "kb",
+                "verbosity",
+                "screen",
+                "filename",
+                "ene_unit"
+            ],
+            "check_equipartition": [
+                "positions",
+                "velocities",
+                "masses",
+                "molec_idx",
+                "molec_nbonds",
+                "natoms",
+                "nmolecs",
+                "ndof_reduction_tra",
+                "ndof_reduction_rot",
+                "dtemp",
+                "temp",
+                "alpha",
+                "molec_groups",
+                "random_divisions",
+                "random_groups",
+                "ndof_molec",
+                "kin_molec",
+                "verbosity",
+                "screen",
+                "filename"
+            ],
+            "calc_system_ndof": [
+                "natoms",
+                "nmolecs",
+                "nbonds",
+                "stop_com_tra",
+                "stop_com_rot"
+            ],
+            "calc_ndof": [
+                "natoms",
+                "nmolecs",
+                "molec_idx",
+                "molec_nbonds",
+                "ndof_reduction_tra",
+                "ndof_reduction_rot"
+            ],
+            "calc_molec_kinetic_energy": [
+                "pos",
+                "vel",
+                "masses",
+                "molec_idx",
+                "natoms",
+                "nmolecs"
+            ],
+            "group_kinetic_energy": [
+                "kin_molec",
+                "nmolecs",
+                "molec_group"
+            ],
+            "group_ndof": [
+                "ndof_molec",
+                "nmolecs",
+                "molec_group"
+            ],
+            "calc_temperatures": [
+                "kin_molec",
+                "ndof_molec",
+                "nmolecs",
+                "molec_group"
+            ],
+            "test_mb_dist": [
+                "kin_molec",
+                "ndof_molec",
+                "nmolecs",
+                "temp",
+                "alpha",
+                "dict_keys",
+                "group",
+                "verbosity",
+                "screen",
+                "filename",
+                "ene_unit"
+            ],
+            "test_temp_diff": [
+                "kin_molec",
+                "ndof_molec",
+                "nmolecs",
+                "dtemp",
+                "dict_keys",
+                "group",
+                "verbosity",
+                "screen",
+                "filename",
+                "ene_unit"
+            ],
+            "test_temp_diff_groups": [
+                "kin_molec",
+                "ndof_molec",
+                "nmolecs",
+                "group1",
+                "group2",
+                "dtemp",
+                "dict_keys",
+                "verbosity"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation.util.gromacs_interface": {
+            "GromacsInterface": {
+                "__init__": [
+                    "self",
+                    "exe",
+                    "dp",
+                    "includepath"
+                ],
+                "exe": [
+                    "self",
+                    "exe"
+                ],
+                "double": [
+                    "self",
+                    "dp"
+                ],
+                "includepath": [
+                    "self",
+                    "path"
+                ],
+                "get_quantities": [
+                    "self",
+                    "edr",
+                    "quantities",
+                    "cwd",
+                    "begin",
+                    "end",
+                    "args"
+                ],
+                "read_trr": [
+                    "self",
+                    "trr"
+                ],
+                "read_gro": [
+                    "gro"
+                ],
+                "read_mdp": [
+                    "mdp"
+                ],
+                "write_mdp": [
+                    "options",
+                    "mdp"
+                ],
+                "read_system_from_top": [
+                    "self",
+                    "top",
+                    "define",
+                    "include"
+                ],
+                "grompp": [
+                    "self",
+                    "mdp",
+                    "top",
+                    "gro",
+                    "tpr",
+                    "cwd",
+                    "args",
+                    "stdin",
+                    "stdout",
+                    "stderr"
+                ],
+                "mdrun": [
+                    "self",
+                    "tpr",
+                    "edr",
+                    "deffnm",
+                    "cwd",
+                    "args",
+                    "stdin",
+                    "stdout",
+                    "stderr",
+                    "mpicmd"
+                ],
+                "_check_exe": [
+                    "self",
+                    "quiet",
+                    "exe"
+                ],
+                "_run": [
+                    "self",
+                    "cmd",
+                    "args",
+                    "cwd",
+                    "stdin",
+                    "stdout",
+                    "stderr",
+                    "mpicmd"
+                ],
+                "_create_xvg": [
+                    "self",
+                    "edr",
+                    "xvg",
+                    "quantities",
+                    "cwd",
+                    "begin",
+                    "end",
+                    "args"
+                ],
+                "_read_top": [
+                    "self",
+                    "filehandler",
+                    "include",
+                    "define"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.util.trajectory": {
+            "equilibrate": [
+                "traj",
+                "verbose",
+                "name"
+            ],
+            "decorrelate": [
+                "traj",
+                "facs",
+                "verbose",
+                "name"
+            ],
+            "cut_tails": [
+                "traj",
+                "cut",
+                "verbose",
+                "name"
+            ],
+            "prepare": [
+                "traj",
+                "cut",
+                "facs",
+                "verbosity",
+                "name"
+            ],
+            "overlap": [
+                "traj1",
+                "traj2",
+                "cut",
+                "verbose",
+                "name"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation.util.plot": {
+            "plot": [
+                "res",
+                "legend",
+                "title",
+                "xlabel",
+                "ylabel",
+                "xlim",
+                "ylim",
+                "inv_x",
+                "inv_y",
+                "sci_x",
+                "sci_y",
+                "axtext",
+                "annotation_location",
+                "filename",
+                "screen"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation.util.integrator": {
+            "calculate_rmsd": [
+                "data",
+                "time",
+                "slope"
+            ],
+            "max_deviation": [
+                "dts",
+                "rmsds"
+            ],
+            "check_convergence": [
+                "const_traj",
+                "convergence_test",
+                "verbose",
+                "slope",
+                "screen",
+                "filename"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation.util.error": {
+            "PhysicalValidationError": {},
+            "InputError": {
+                "__init__": [
+                    "self",
+                    "argument",
+                    "message"
+                ]
+            },
+            "ParserValueNotSetError": {
+                "__init__": [
+                    "self",
+                    "message"
+                ]
+            },
+            "FileFormatError": {
+                "__init__": [
+                    "self",
+                    "argument",
+                    "message"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.util.ensemble": {
+            "generate_histograms": [
+                "traj1",
+                "traj2",
+                "g1",
+                "g2",
+                "bins"
+            ],
+            "do_linear_fit": [
+                "traj1",
+                "traj2",
+                "g1",
+                "g2",
+                "bins",
+                "screen",
+                "filename",
+                "trueslope",
+                "trueoffset",
+                "units"
+            ],
+            "do_max_likelihood_fit": [
+                "traj1",
+                "traj2",
+                "g1",
+                "g2",
+                "init_params",
+                "verbose"
+            ],
+            "check_bins": [
+                "traj1",
+                "traj2",
+                "bins"
+            ],
+            "print_stats": [
+                "title",
+                "fitvals",
+                "dfitvals",
+                "kb",
+                "param1",
+                "param2",
+                "trueslope",
+                "temp",
+                "pvconvert",
+                "dtemp",
+                "dpress",
+                "dmu",
+                "dtempdpress",
+                "dtempdmu"
+            ],
+            "estimate_interval": [
+                "ens_string",
+                "ens_temp",
+                "energy",
+                "kb",
+                "ens_press",
+                "volume",
+                "pvconvert",
+                "verbosity",
+                "cutoff",
+                "tunit",
+                "punit"
+            ],
+            "check_1d": [
+                "traj1",
+                "traj2",
+                "param1",
+                "param2",
+                "kb",
+                "quantity",
+                "dtemp",
+                "dpress",
+                "dmu",
+                "temp",
+                "pvconvert",
+                "nbins",
+                "cutoff",
+                "seed",
+                "verbosity",
+                "screen",
+                "filename"
+            ],
+            "check_2d": [
+                "traj1",
+                "traj2",
+                "param1",
+                "param2",
+                "kb",
+                "pvconvert",
+                "quantity",
+                "dtempdpress",
+                "dtempdmu",
+                "cutoff",
+                "seed",
+                "verbosity",
+                "screen",
+                "filename"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation.util": {},
+        "tests.physicalvalidation.physical_validation.data.unit_data": {
+            "UnitData": {
+                "__init__": [
+                    "self",
+                    "kb",
+                    "energy_conversion",
+                    "length_conversion",
+                    "volume_conversion",
+                    "temperature_conversion",
+                    "pressure_conversion",
+                    "time_conversion",
+                    "energy_str",
+                    "length_str",
+                    "volume_str",
+                    "temperature_str",
+                    "pressure_str",
+                    "time_str"
+                ],
+                "__parsers": [],
+                "units": [
+                    "cls",
+                    "name"
+                ],
+                "__eq__": [
+                    "self",
+                    "other"
+                ],
+                "kb": [
+                    "self"
+                ],
+                "energy_str": [
+                    "self"
+                ],
+                "length_str": [
+                    "self"
+                ],
+                "volume_str": [
+                    "self"
+                ],
+                "temperature_str": [
+                    "self"
+                ],
+                "pressure_str": [
+                    "self"
+                ],
+                "time_str": [
+                    "self"
+                ],
+                "energy_conversion": [
+                    "self"
+                ],
+                "length_conversion": [
+                    "self"
+                ],
+                "volume_conversion": [
+                    "self"
+                ],
+                "temperature_conversion": [
+                    "self"
+                ],
+                "pressure_conversion": [
+                    "self"
+                ],
+                "time_conversion": [
+                    "self"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.ensemble_data": {
+            "EnsembleData": {
+                "ensembles": [],
+                "__init__": [
+                    "self",
+                    "ensemble",
+                    "natoms",
+                    "mu",
+                    "volume",
+                    "pressure",
+                    "energy",
+                    "temperature"
+                ],
+                "ensemble": [
+                    "self"
+                ],
+                "natoms": [
+                    "self"
+                ],
+                "mu": [
+                    "self"
+                ],
+                "volume": [
+                    "self"
+                ],
+                "pressure": [
+                    "self"
+                ],
+                "energy": [
+                    "self"
+                ],
+                "temperature": [
+                    "self"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.observable_data": {
+            "ObservableData": {
+                "observables": [],
+                "__init__": [
+                    "self",
+                    "kinetic_energy",
+                    "potential_energy",
+                    "total_energy",
+                    "volume",
+                    "pressure",
+                    "temperature",
+                    "constant_of_motion"
+                ],
+                "get": [
+                    "self",
+                    "key"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "set": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "kinetic_energy": [
+                    "self",
+                    "kinetic_energy"
+                ],
+                "potential_energy": [
+                    "self",
+                    "potential_energy"
+                ],
+                "total_energy": [
+                    "self",
+                    "total_energy"
+                ],
+                "volume": [
+                    "self",
+                    "volume"
+                ],
+                "pressure": [
+                    "self",
+                    "pressure"
+                ],
+                "temperature": [
+                    "self",
+                    "temperature"
+                ],
+                "constant_of_motion": [
+                    "self",
+                    "constant_of_motion"
+                ],
+                "nframes": [
+                    "self"
+                ],
+                "kinetic_energy_per_molecule": [
+                    "self",
+                    "kinetic_energy"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.trajectory_data": {
+            "TrajectoryData": {
+                "trajectories": [],
+                "__init__": [
+                    "self",
+                    "position",
+                    "velocity"
+                ],
+                "get": [
+                    "self",
+                    "key"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "set": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "position": [
+                    "self",
+                    "pos"
+                ],
+                "velocity": [
+                    "self",
+                    "vel"
+                ],
+                "nframes": [
+                    "self"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.simulation_data": {
+            "SimulationData": {
+                "compatible": [
+                    "data_1",
+                    "data_2"
+                ],
+                "__init__": [
+                    "self",
+                    "units",
+                    "dt",
+                    "system",
+                    "ensemble",
+                    "observables",
+                    "trajectory"
+                ],
+                "ensemble": [
+                    "self",
+                    "ensemble"
+                ],
+                "units": [
+                    "self",
+                    "units"
+                ],
+                "observables": [
+                    "self",
+                    "observables"
+                ],
+                "trajectory": [
+                    "self",
+                    "trajectory"
+                ],
+                "system": [
+                    "self",
+                    "system"
+                ],
+                "dt": [
+                    "self",
+                    "dt"
+                ],
+                "set_ensemble": [
+                    "self",
+                    "ensemble",
+                    "natoms",
+                    "mu",
+                    "volume",
+                    "pressure",
+                    "energy",
+                    "temperature"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.gromacs_parser": {
+            "GromacsParser": {
+                "units": [],
+                "__init__": [
+                    "self",
+                    "exe",
+                    "includepath"
+                ],
+                "get_simulation_data": [
+                    "self",
+                    "mdp",
+                    "top",
+                    "edr",
+                    "trr",
+                    "gro"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.system_data": {
+            "SystemData": {
+                "__init__": [
+                    "self",
+                    "natoms",
+                    "nconstraints",
+                    "ndof_reduction_tra",
+                    "ndof_reduction_rot",
+                    "mass",
+                    "molecule_idx",
+                    "nconstraints_per_molecule"
+                ],
+                "natoms": [
+                    "self",
+                    "natoms"
+                ],
+                "nconstraints": [
+                    "self",
+                    "nconstraints"
+                ],
+                "ndof_reduction_tra": [
+                    "self",
+                    "ndof_reduction_tra"
+                ],
+                "ndof_reduction_rot": [
+                    "self",
+                    "ndof_reduction_rot"
+                ],
+                "mass": [
+                    "self",
+                    "mass"
+                ],
+                "molecule_idx": [
+                    "self",
+                    "molecule_idx"
+                ],
+                "nconstraints_per_molecule": [
+                    "self",
+                    "nconstraints_per_molecule"
+                ],
+                "ndof_per_molecule": [
+                    "self",
+                    "ndof_per_molecule"
+                ],
+                "bonds": [
+                    "self",
+                    "bonds"
+                ],
+                "constrained_bonds": [
+                    "self",
+                    "constrained_bonds"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.parser": {
+            "Parser": {
+                "units": [],
+                "get_simulation_data": [
+                    "self"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.flatfile_parser": {
+            "FlatfileParser": {
+                "__init__": [
+                    "self"
+                ],
+                "get_simulation_data": [
+                    "self",
+                    "units",
+                    "ensemble",
+                    "system",
+                    "dt",
+                    "position_file",
+                    "velocity_file",
+                    "kinetic_ene_file",
+                    "potential_ene_file",
+                    "total_ene_file",
+                    "volume_file",
+                    "pressure_file",
+                    "temperature_file",
+                    "const_of_mot_file"
+                ],
+                "__read_xyz": [
+                    "filename"
+                ],
+                "__read_1d": [
+                    "filename"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data": {}
+    }
+}

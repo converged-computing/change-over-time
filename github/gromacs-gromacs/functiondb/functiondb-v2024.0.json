@@ -1,0 +1,2731 @@
+{
+    "v2024.0": {
+        "python_packaging.gmxapi.src.gmxapi.commandline": {
+            "cli_executable": [],
+            "cli_bindir": [],
+            "cli": [
+                "command",
+                "shell",
+                "env",
+                "output",
+                "stdin",
+                "_exist_ok"
+            ],
+            "_flatten_dict": [
+                "mapping"
+            ],
+            "filemap_to_flag_list": [
+                "filemap"
+            ],
+            "commandline_operation": [
+                "executable",
+                "arguments",
+                "input_files",
+                "output_files",
+                "stdin",
+                "env"
+            ]
+        },
+        "python_packaging.gmxapi.src.gmxapi._logging": {},
+        "python_packaging.gmxapi.src.gmxapi.exceptions": {
+            "Error": {},
+            "Warning": {},
+            "ApiError": {},
+            "DataShapeError": {},
+            "MissingImplementationError": {},
+            "FeatureNotAvailableError": {},
+            "ProtocolError": {},
+            "TypeError": {},
+            "UsageError": {},
+            "ValueError": {}
+        },
+        "python_packaging.gmxapi.src.gmxapi.utility": {
+            "join_path": [
+                "first",
+                "second",
+                "output"
+            ],
+            "config": []
+        },
+        "python_packaging.gmxapi.src.gmxapi.datamodel": {
+            "ndarray": [
+                "data",
+                "shape",
+                "dtype"
+            ],
+            "NDArray": {
+                "__init__": [
+                    "self",
+                    "data"
+                ],
+                "to_list": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "__getitem__": [
+                    "self",
+                    "i"
+                ],
+                "__len__": [
+                    "self"
+                ]
+            },
+            "ArrayFuture": {
+                "dtype": [
+                    "self"
+                ],
+                "result": [
+                    "self"
+                ]
+            }
+        },
+        "python_packaging.gmxapi.src.gmxapi.testsupport": {
+            "pytest_configure": [
+                "config"
+            ],
+            "pytest_runtest_setup": [
+                "item"
+            ],
+            "pytest_addoption": [
+                "parser"
+            ],
+            "pydev_debug": [
+                "request"
+            ],
+            "gmxconfig": [],
+            "mdrun_kwargs": [
+                "request",
+                "gmxconfig"
+            ],
+            "scoped_chdir": [
+                "dir"
+            ],
+            "cleandir": [
+                "tmp_path"
+            ],
+            "gmxcli": []
+        },
+        "python_packaging.gmxapi.src.gmxapi.version": {
+            "api_is_at_least": [
+                "major_version",
+                "minor_version",
+                "patch_version"
+            ],
+            "has_feature": [
+                "name",
+                "enable_exception"
+            ]
+        },
+        "python_packaging.gmxapi.src.gmxapi.operation": {
+            "comm_world": [],
+            "comm_world_rank": [],
+            "comm_world_size": [],
+            "computed_result": [
+                "function"
+            ],
+            "define_publishing_data_proxy": [
+                "output_description"
+            ],
+            "_make_registry_key": [],
+            "_register_operation": [
+                "cls"
+            ],
+            "_get_operation_director": [
+                "operation",
+                "context"
+            ],
+            "define_output_data_proxy": [
+                "output_description"
+            ],
+            "_subscription_provider_callback": [
+                "obj",
+                "ensemble_member",
+                "subscriber"
+            ],
+            "_subscriber_callback": [
+                "output",
+                "name",
+                "ensemble_member",
+                "owner"
+            ],
+            "wrapped_function_runner": [
+                "function",
+                "output_description",
+                "owning_rank",
+                "allow_duplicate"
+            ],
+            "current_context": [],
+            "push_context": [
+                "context"
+            ],
+            "pop_context": [],
+            "function_wrapper": [
+                "output",
+                "allow_duplicate"
+            ],
+            "ensure_future": [
+                "source",
+                "description",
+                "_propagate_reset"
+            ],
+            "while_loop": [],
+            "subgraph": [
+                "variables"
+            ],
+            "_join_arrays": [],
+            "join_arrays": [],
+            "concatenate_lists": [
+                "sublists"
+            ],
+            "make_constant": [
+                "value"
+            ],
+            "logical_not": [
+                "value"
+            ],
+            "ResultDescription": {
+                "__init__": [
+                    "self",
+                    "dtype",
+                    "width"
+                ],
+                "dtype": [
+                    "self"
+                ],
+                "width": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "__eq__": [
+                    "self",
+                    "other"
+                ]
+            },
+            "OutputData": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "description",
+                    "done_callback"
+                ],
+                "width": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "name": [
+                    "self"
+                ],
+                "done": [
+                    "self",
+                    "member"
+                ],
+                "data": [
+                    "self",
+                    "member"
+                ],
+                "set": [
+                    "self",
+                    "value",
+                    "member"
+                ],
+                "reset": [
+                    "self"
+                ]
+            },
+            "DataSourceCollection": {
+                "__init__": [
+                    "self"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "item"
+                ],
+                "_get_resettable": [
+                    "cls",
+                    "obj"
+                ],
+                "reset": [
+                    "self"
+                ]
+            },
+            "OutputCollectionDescription": {
+                "__init__": [
+                    "self"
+                ]
+            },
+            "InputCollectionDescription": {
+                "__init__": [
+                    "self",
+                    "parameters"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "from_function": [
+                    "function"
+                ],
+                "bind": [
+                    "self"
+                ]
+            },
+            "ProxyDataDescriptor": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "dtype"
+                ],
+                "__set_name__": [
+                    "self",
+                    "owner",
+                    "name"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "DataProxyMeta": {
+                "__prepare__": [
+                    "mcs",
+                    "name",
+                    "bases",
+                    "descriptors"
+                ],
+                "__new__": [
+                    "cls",
+                    "name",
+                    "bases",
+                    "namespace"
+                ],
+                "__init__": [
+                    "cls",
+                    "name",
+                    "bases",
+                    "namespace"
+                ]
+            },
+            "DataProxyBase": {
+                "__init__": [
+                    "self",
+                    "instance",
+                    "client_id"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "ensemble_width": [
+                    "self"
+                ],
+                "items": [
+                    "cls"
+                ],
+                "__getitem__": [
+                    "self",
+                    "k"
+                ],
+                "__len__": [
+                    "self"
+                ],
+                "__iter__": [
+                    "self"
+                ]
+            },
+            "Publisher": {
+                "__get__": [
+                    "self",
+                    "instance",
+                    "owner"
+                ],
+                "__set__": [
+                    "self",
+                    "instance",
+                    "value"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "_Resources": {},
+            "SourceResource": {
+                "__init__": [
+                    "self"
+                ],
+                "data": [
+                    "self"
+                ],
+                "is_done": [
+                    "self",
+                    "name"
+                ],
+                "get": [
+                    "self",
+                    "name"
+                ],
+                "update_output": [
+                    "self"
+                ],
+                "reset": [
+                    "self"
+                ],
+                "width": [
+                    "self"
+                ],
+                "future": [
+                    "self",
+                    "name",
+                    "description"
+                ]
+            },
+            "StaticSourceManager": {
+                "__init__": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "is_done": [
+                    "self",
+                    "name"
+                ],
+                "get": [
+                    "self",
+                    "name"
+                ],
+                "data": [
+                    "self"
+                ],
+                "width": [
+                    "self"
+                ],
+                "update_output": [
+                    "self"
+                ],
+                "reset": [
+                    "self"
+                ],
+                "future": [
+                    "self",
+                    "name",
+                    "description"
+                ]
+            },
+            "ProxyResourceManager": {
+                "__init__": [
+                    "self",
+                    "proxied_future",
+                    "width",
+                    "function",
+                    "dtype"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "width": [
+                    "self"
+                ],
+                "reset": [
+                    "self"
+                ],
+                "is_done": [
+                    "self",
+                    "name"
+                ],
+                "_broadcast": [
+                    "self",
+                    "result"
+                ],
+                "_map": [
+                    "self",
+                    "result"
+                ],
+                "get": [
+                    "self",
+                    "name"
+                ],
+                "update_output": [
+                    "self"
+                ],
+                "data": [
+                    "self"
+                ],
+                "future": [
+                    "self",
+                    "name",
+                    "description"
+                ]
+            },
+            "AbstractOperation": {
+                "run": [
+                    "self"
+                ],
+                "output": [
+                    "self"
+                ]
+            },
+            "OperationRegistryKey": {
+                "__hash__": [
+                    "self"
+                ],
+                "__eq__": [
+                    "self",
+                    "other"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "OperationRegistry": {
+                "__getitem__": [
+                    "self"
+                ]
+            },
+            "InputDescription": {
+                "signature": [
+                    "self"
+                ],
+                "make_uid": [
+                    "self",
+                    "input"
+                ]
+            },
+            "ConcreteInputDescription": {
+                "__init__": [
+                    "self",
+                    "input_signature",
+                    "uid_helper"
+                ],
+                "signature": [
+                    "self"
+                ],
+                "make_uid": [
+                    "self",
+                    "input"
+                ]
+            },
+            "OperationMeta": {
+                "__new__": [
+                    "meta",
+                    "name",
+                    "bases",
+                    "class_dict"
+                ]
+            },
+            "OperationDetailsBase": {
+                "output_description": [
+                    "self"
+                ],
+                "publishing_data_proxy": [
+                    "self"
+                ],
+                "output_data_proxy": [
+                    "self",
+                    "instance"
+                ],
+                "__call__": [
+                    "self",
+                    "resources"
+                ],
+                "resource_director": [
+                    "cls"
+                ],
+                "operation_director": [
+                    "cls"
+                ]
+            },
+            "Future": {
+                "__init__": [
+                    "self",
+                    "resource_manager",
+                    "name",
+                    "description"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "result": [
+                    "self"
+                ],
+                "_reset": [
+                    "self"
+                ],
+                "dtype": [
+                    "self"
+                ],
+                "__getitem__": [
+                    "self",
+                    "item"
+                ]
+            },
+            "OutputDataDescriptor": {
+                "__get__": [
+                    "self",
+                    "proxy",
+                    "owner"
+                ]
+            },
+            "MutableResourceDescriptor": {
+                "__get__": [
+                    "self",
+                    "proxy",
+                    "owner"
+                ]
+            },
+            "SinkTerminal": {
+                "__init__": [
+                    "self",
+                    "input_collection_description"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "update_width": [
+                    "self",
+                    "width"
+                ],
+                "update": [
+                    "self",
+                    "data_source_collection"
+                ]
+            },
+            "DataEdge": {
+                "__init__": [
+                    "self",
+                    "source_collection",
+                    "sink_terminal"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "reset": [
+                    "self"
+                ],
+                "resolve": [
+                    "self",
+                    "key",
+                    "member"
+                ],
+                "sink": [
+                    "self",
+                    "node"
+                ]
+            },
+            "AbstractRunnerDirector": {
+                "__call__": [
+                    "self",
+                    "resources"
+                ]
+            },
+            "PublishingManager": {
+                "__init__": [
+                    "self",
+                    "resource_manager",
+                    "publisher_factory"
+                ],
+                "publishing_context": [
+                    "self",
+                    "ensemble_member"
+                ],
+                "reset": [
+                    "self"
+                ],
+                "register_observer": [
+                    "self",
+                    "cb"
+                ],
+                "__enter__": [
+                    "self"
+                ],
+                "__exit__": [
+                    "self",
+                    "__exc_type",
+                    "__exc_value",
+                    "__traceback"
+                ]
+            },
+            "ResourceManager": {
+                "ensemble_width": [
+                    "self"
+                ],
+                "__init__": [
+                    "self"
+                ],
+                "operation_id": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "_receive_completion_signal": [
+                    "self",
+                    "obj"
+                ],
+                "width": [
+                    "self"
+                ],
+                "reset": [
+                    "self"
+                ],
+                "done": [
+                    "self",
+                    "member"
+                ],
+                "is_done": [
+                    "self",
+                    "name",
+                    "member"
+                ],
+                "set_result": [
+                    "self",
+                    "name",
+                    "value",
+                    "member"
+                ],
+                "_make_done_callback": [
+                    "self",
+                    "func",
+                    "name",
+                    "member"
+                ],
+                "_wrap_callback": [
+                    "func",
+                    "name",
+                    "operation_id"
+                ],
+                "add_done_callback": [
+                    "self",
+                    "func"
+                ],
+                "_run_callbacks": [
+                    "self"
+                ],
+                "get": [
+                    "self",
+                    "name"
+                ],
+                "update_output": [
+                    "self"
+                ],
+                "future": [
+                    "self",
+                    "name",
+                    "description"
+                ],
+                "data": [
+                    "self"
+                ],
+                "local_input": [
+                    "self",
+                    "member"
+                ],
+                "publishing_resources": [
+                    "self"
+                ],
+                "_make_publisher_callback": [
+                    "self",
+                    "func",
+                    "name",
+                    "member"
+                ]
+            },
+            "PyFunctionRunnerResources": {
+                "output": [
+                    "self"
+                ],
+                "input": [
+                    "self"
+                ]
+            },
+            "PyFunctionRunner": {
+                "__init__": [
+                    "self"
+                ],
+                "__call__": [
+                    "self",
+                    "resources"
+                ]
+            },
+            "CapturedOutputRunner": {
+                "__call__": [
+                    "self",
+                    "resources"
+                ]
+            },
+            "OutputParameterRunner": {
+                "__call__": [
+                    "self",
+                    "resources"
+                ]
+            },
+            "NonDuplicatingRunnerWrapper": {
+                "__init__": [
+                    "self",
+                    "wrapped_runner",
+                    "owning_rank"
+                ],
+                "__call__": [
+                    "self",
+                    "resources"
+                ]
+            },
+            "OperationHandle": {
+                "__init__": [
+                    "self",
+                    "resource_manager"
+                ],
+                "node_uid": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "output": [
+                    "self"
+                ],
+                "run": [
+                    "self"
+                ]
+            },
+            "OperationPlaceholder": {
+                "__init__": [
+                    "self",
+                    "subgraph_resource_manager"
+                ],
+                "run": [
+                    "self"
+                ],
+                "output": [
+                    "self"
+                ]
+            },
+            "NodeBuilder": {
+                "__init__": [
+                    "self",
+                    "context",
+                    "operation",
+                    "label"
+                ],
+                "set_input_description": [
+                    "self",
+                    "input_description"
+                ],
+                "set_resource_factory": [
+                    "self",
+                    "factory"
+                ],
+                "set_runner_director": [
+                    "self",
+                    "factory"
+                ],
+                "set_handle": [
+                    "self",
+                    "factory"
+                ],
+                "set_output_factory": [
+                    "self",
+                    "factory"
+                ],
+                "set_resource_manager": [
+                    "self",
+                    "implementation"
+                ],
+                "build": [
+                    "self"
+                ],
+                "add_input": [
+                    "self",
+                    "name",
+                    "source"
+                ]
+            },
+            "InputPack": {
+                "__init__": [
+                    "self",
+                    "kwargs"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "Context": {
+                "node": [
+                    "self",
+                    "node_id"
+                ],
+                "__init__": [
+                    "self"
+                ],
+                "node_builder": [
+                    "self"
+                ]
+            },
+            "ModuleNodeBuilder": {},
+            "ModuleContext": {
+                "node_builder": [
+                    "self",
+                    "operation",
+                    "label"
+                ]
+            },
+            "OutputFactory": {
+                "__init__": [
+                    "self"
+                ],
+                "output_proxy": [
+                    "self"
+                ],
+                "output_description": [
+                    "self"
+                ],
+                "publishing_data_proxy": [
+                    "self"
+                ]
+            },
+            "OperationDirector": {
+                "__init__": [
+                    "self"
+                ],
+                "__call__": [
+                    "self"
+                ]
+            },
+            "RunnerDirector": {
+                "__init__": [
+                    "self",
+                    "runner",
+                    "allow_duplicate"
+                ],
+                "__call__": [
+                    "self",
+                    "resources"
+                ]
+            },
+            "DataStore": {
+                "__init__": [
+                    "self",
+                    "output_description",
+                    "ensemble_width",
+                    "done_callback"
+                ],
+                "_mark_as_done": [
+                    "self",
+                    "key"
+                ],
+                "__setitem__": [
+                    "self",
+                    "k",
+                    "v"
+                ],
+                "__delitem__": [
+                    "self",
+                    "v"
+                ],
+                "reset": [
+                    "self"
+                ]
+            },
+            "GraphVariableDescriptor": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "dtype",
+                    "default"
+                ],
+                "internal_name": [
+                    "self"
+                ],
+                "__get__": [
+                    "self",
+                    "instance",
+                    "owner"
+                ],
+                "__set__": [
+                    "self",
+                    "instance",
+                    "value"
+                ]
+            },
+            "GraphMeta": {
+                "__prepare__": [
+                    "mcs",
+                    "name",
+                    "bases",
+                    "variables"
+                ],
+                "__new__": [
+                    "cls",
+                    "name",
+                    "bases",
+                    "namespace"
+                ],
+                "__init__": [
+                    "cls",
+                    "name",
+                    "bases",
+                    "namespace"
+                ]
+            },
+            "SubgraphNodeBuilder": {
+                "__init__": [
+                    "self",
+                    "context",
+                    "operation",
+                    "label"
+                ],
+                "add_input": [
+                    "self",
+                    "name",
+                    "source"
+                ],
+                "build": [
+                    "self"
+                ]
+            },
+            "SubgraphContext": {
+                "__init__": [
+                    "self"
+                ],
+                "node_builder": [
+                    "self",
+                    "operation",
+                    "label"
+                ],
+                "add_resetter": [
+                    "self",
+                    "function"
+                ]
+            },
+            "Subgraph": {},
+            "SubgraphBuilder": {
+                "__init__": [
+                    "self",
+                    "variables"
+                ],
+                "_update_width": [
+                    "self",
+                    "width"
+                ],
+                "__getattr__": [
+                    "self",
+                    "item"
+                ],
+                "__setattr__": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "add_update": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "__enter__": [
+                    "self"
+                ],
+                "build": [
+                    "self"
+                ],
+                "__exit__": [
+                    "self",
+                    "exc_type",
+                    "exc_val",
+                    "exc_tb"
+                ],
+                "__call__": [
+                    "self"
+                ]
+            },
+            "SubgraphVariable": {
+                "__init__": [
+                    "self",
+                    "subgraph",
+                    "item"
+                ],
+                "__call__": [
+                    "self",
+                    "obj"
+                ]
+            }
+        },
+        "python_packaging.gmxapi.src.gmxapi._transform": {
+            "identity": [
+                "x"
+            ],
+            "broadcast": [
+                "singular",
+                "width"
+            ]
+        },
+        "python_packaging.gmxapi.src.gmxapi.abc": {
+            "NDArray": {},
+            "Resource": {},
+            "Future": {
+                "dtype": [
+                    "self"
+                ],
+                "result": [
+                    "self"
+                ],
+                "__subclasshook__": [
+                    "cls",
+                    "C"
+                ]
+            },
+            "MutableResourceSubscriber": {},
+            "MutableResource": {
+                "subscribe": [
+                    "self",
+                    "subscriber"
+                ]
+            },
+            "OutputDataProxy": {},
+            "OperationReference": {
+                "run": [
+                    "self"
+                ],
+                "output": [
+                    "self"
+                ]
+            },
+            "Fingerprint": {},
+            "OutputDescription": {},
+            "Edge": {},
+            "Node": {
+                "handle": [
+                    "self",
+                    "context"
+                ],
+                "output_description": [
+                    "self",
+                    "context"
+                ],
+                "input": [
+                    "self"
+                ],
+                "fingerprint": [
+                    "self"
+                ],
+                "operation": [
+                    "self"
+                ]
+            },
+            "NodeBuilder": {
+                "build": [
+                    "self"
+                ],
+                "set_input_description": [
+                    "self",
+                    "input_description"
+                ],
+                "set_output_factory": [
+                    "self",
+                    "output_factory"
+                ],
+                "add_input": [
+                    "self",
+                    "name",
+                    "source"
+                ],
+                "set_handle": [
+                    "self",
+                    "handle_builder"
+                ],
+                "set_runner_director": [
+                    "self",
+                    "runner_builder"
+                ],
+                "set_resource_factory": [
+                    "self",
+                    "factory"
+                ]
+            },
+            "Context": {
+                "node_builder": [
+                    "self"
+                ],
+                "node": [
+                    "self",
+                    "node_id"
+                ]
+            },
+            "ResourceFactory": {
+                "input_description": [
+                    "self",
+                    "context"
+                ]
+            },
+            "OperationDirector": {
+                "__call__": [
+                    "self",
+                    "resources",
+                    "label"
+                ],
+                "handle_type": [
+                    "self",
+                    "context"
+                ],
+                "resource_factory": [
+                    "self",
+                    "source",
+                    "target"
+                ]
+            },
+            "OperationImplementation": {
+                "name": [
+                    "self"
+                ],
+                "namespace": [
+                    "self"
+                ],
+                "director": [
+                    "cls",
+                    "context"
+                ]
+            }
+        },
+        "python_packaging.gmxapi.src.gmxapi.typing": {
+            "Future": {
+                "dtype": [
+                    "self"
+                ],
+                "result": [
+                    "self"
+                ]
+            },
+            "OperationReference": {},
+            "OperationDirector": {},
+            "OperationImplementation": {
+                "name": [
+                    "self"
+                ],
+                "namespace": [
+                    "self"
+                ],
+                "director": [
+                    "self",
+                    "context"
+                ]
+            }
+        },
+        "python_packaging.gmxapi.src.gmxapi.runtime": {
+            "mpi_comm_world": [],
+            "mpi_comm_null": [],
+            "mpi_undefined": [],
+            "_finalize_communicator": [
+                "comm"
+            ],
+            "_remaining_subscribers_warning": [
+                "provider",
+                "subscribers"
+            ],
+            "scoped_resources": [
+                "allocation",
+                "requirements"
+            ],
+            "filtered_mpi_environ": [],
+            "ResourceAllocation": {
+                "communicator": [
+                    "self"
+                ],
+                "subscribe": [
+                    "self",
+                    "subscriber"
+                ],
+                "unsubscribe": [
+                    "self",
+                    "token"
+                ]
+            },
+            "ResourceAssignment": {
+                "__init__": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "_next_monotonic_integer": [
+                    "self"
+                ],
+                "subscribe": [
+                    "self",
+                    "subscriber"
+                ],
+                "unsubscribe": [
+                    "self",
+                    "token"
+                ],
+                "communicator": [
+                    "self"
+                ],
+                "parent_communicator": [
+                    "self"
+                ],
+                "ensemble_communicator": [
+                    "self"
+                ],
+                "close": [
+                    "self"
+                ],
+                "add_finalizer": [
+                    "self",
+                    "func"
+                ],
+                "closed": [
+                    "self"
+                ],
+                "assign": [
+                    "cls",
+                    "allocation",
+                    "requirements"
+                ],
+                "subtask_rank": [
+                    "self"
+                ],
+                "subtask_id": [
+                    "self"
+                ],
+                "is_subtask_root": [
+                    "self"
+                ],
+                "base_rank": [
+                    "self"
+                ]
+            },
+            "BaseContext": {
+                "__new__": [
+                    "cls"
+                ],
+                "communicator": [
+                    "cls"
+                ],
+                "set_base_communicator": [
+                    "cls",
+                    "communicator"
+                ],
+                "instance": [
+                    "cls"
+                ],
+                "subscribe": [
+                    "self",
+                    "subscriber"
+                ],
+                "unsubscribe": [
+                    "self",
+                    "token"
+                ]
+            },
+            "ResourceRequirements": {
+                "__post_init__": [
+                    "self"
+                ]
+            }
+        },
+        "python_packaging.gmxapi.src.gmxapi": {},
+        "python_packaging.gmxapi.src.gmxapi.simulation.fileio": {
+            "read_tpr": [
+                "tprfile"
+            ],
+            "write_tpr_file": [
+                "output",
+                "input"
+            ],
+            "TprFile": {
+                "__init__": [
+                    "self",
+                    "filename",
+                    "mode"
+                ],
+                "close": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ],
+                "__enter__": [
+                    "self"
+                ],
+                "__exit__": [
+                    "self",
+                    "exc_type",
+                    "exc_val",
+                    "exc_tb"
+                ]
+            },
+            "_NodeOutput": {
+                "__init__": [
+                    "self",
+                    "parameters",
+                    "structure",
+                    "topology",
+                    "state"
+                ],
+                "parameters": [
+                    "self"
+                ],
+                "structure": [
+                    "self"
+                ],
+                "topology": [
+                    "self"
+                ],
+                "state": [
+                    "self"
+                ]
+            },
+            "_SimulationInput": {
+                "__init__": [
+                    "self",
+                    "tprfile"
+                ],
+                "parameters": [
+                    "self"
+                ],
+                "structure": [
+                    "self"
+                ],
+                "topology": [
+                    "self"
+                ],
+                "state": [
+                    "self"
+                ]
+            }
+        },
+        "python_packaging.gmxapi.src.gmxapi.simulation.context": {
+            "_load_tpr": [
+                "self",
+                "element"
+            ],
+            "_md": [
+                "context",
+                "element"
+            ],
+            "get_context": [
+                "work"
+            ],
+            "Context": {
+                "__init__": [
+                    "self",
+                    "work"
+                ],
+                "work": [
+                    "self",
+                    "work"
+                ],
+                "add_operation": [
+                    "self",
+                    "namespace",
+                    "operation",
+                    "get_builder"
+                ],
+                "ensemble_update": [
+                    "self",
+                    "send",
+                    "recv",
+                    "tag"
+                ],
+                "__enter__": [
+                    "self"
+                ],
+                "__exit__": [
+                    "self",
+                    "exception_type",
+                    "exception_value",
+                    "traceback"
+                ]
+            }
+        },
+        "python_packaging.gmxapi.src.gmxapi.simulation.read_tpr": {
+            "_session_resource_factory": [
+                "input",
+                "output"
+            ],
+            "_standard_node_resource_factory": [],
+            "_run": [
+                "resources"
+            ],
+            "read_tpr": [
+                "filename",
+                "label",
+                "context"
+            ],
+            "OutputDataProxy": {
+                "__init__": [
+                    "self"
+                ]
+            },
+            "PublishingDataProxy": {},
+            "SessionResources": {
+                "__init__": [
+                    "self",
+                    "tpr_filename",
+                    "publisher"
+                ]
+            },
+            "ResourceManager": {
+                "future": [
+                    "self",
+                    "name",
+                    "description"
+                ],
+                "data": [
+                    "self"
+                ]
+            },
+            "ResourceFactory": {
+                "__init__": [
+                    "self",
+                    "target_context",
+                    "source_context"
+                ],
+                "__call__": [
+                    "self"
+                ],
+                "input_description": [
+                    "self",
+                    "context"
+                ]
+            },
+            "StandardInputDescription": {
+                "_make_uid": [
+                    "cls",
+                    "input"
+                ],
+                "signature": [
+                    "self"
+                ],
+                "make_uid": [
+                    "self",
+                    "input"
+                ]
+            },
+            "RegisteredOperation": {
+                "name": [
+                    "self"
+                ],
+                "namespace": [
+                    "self"
+                ],
+                "director": [
+                    "cls",
+                    "context"
+                ]
+            },
+            "StandardOperationHandle": {
+                "__init__": [
+                    "self",
+                    "resource_manager"
+                ],
+                "run": [
+                    "self"
+                ],
+                "output": [
+                    "self"
+                ]
+            },
+            "StandardDirector": {
+                "__init__": [
+                    "self",
+                    "context"
+                ],
+                "__call__": [
+                    "self",
+                    "resources",
+                    "label"
+                ],
+                "handle_type": [
+                    "self",
+                    "context"
+                ],
+                "resource_factory": [
+                    "self",
+                    "source",
+                    "target"
+                ]
+            }
+        },
+        "python_packaging.gmxapi.src.gmxapi.simulation.mdrun": {
+            "redirect_stdio": [
+                "fd",
+                "path"
+            ],
+            "_standard_node_resource_factory": [],
+            "mdrun": [
+                "input",
+                "runtime_args",
+                "label",
+                "context"
+            ],
+            "FD": {},
+            "OutputDataProxy": {},
+            "PublishingDataProxy": {},
+            "SimulationError": {},
+            "LegacyImplementationSubscription": {
+                "__init__": [
+                    "self",
+                    "resource_manager"
+                ]
+            },
+            "SubscriptionSessionResources": {
+                "__init__": [
+                    "self",
+                    "input",
+                    "output"
+                ]
+            },
+            "SubscriptionPublishingRunnerDirector": {
+                "__init__": [
+                    "self"
+                ],
+                "__call__": [
+                    "self",
+                    "resources"
+                ]
+            },
+            "SubscriptionPublishingRunner": {
+                "__init__": [
+                    "self",
+                    "resources"
+                ],
+                "__call__": [
+                    "self"
+                ]
+            },
+            "ResourceManager": {
+                "future": [
+                    "self",
+                    "name",
+                    "description"
+                ],
+                "data": [
+                    "self"
+                ],
+                "update_output": [
+                    "self"
+                ]
+            },
+            "StandardInputDescription": {
+                "_make_uid": [
+                    "cls",
+                    "input"
+                ],
+                "signature": [
+                    "self"
+                ],
+                "make_uid": [
+                    "self",
+                    "input"
+                ]
+            },
+            "RegisteredOperation": {
+                "name": [
+                    "cls"
+                ],
+                "namespace": [
+                    "cls"
+                ],
+                "director": [
+                    "cls",
+                    "context"
+                ]
+            },
+            "StandardOperationHandle": {
+                "__init__": [
+                    "self",
+                    "resource_manager"
+                ],
+                "run": [
+                    "self"
+                ],
+                "output": [
+                    "self"
+                ]
+            },
+            "StandardDirector": {
+                "__init__": [
+                    "self",
+                    "context"
+                ],
+                "__call__": [
+                    "self",
+                    "resources",
+                    "label"
+                ],
+                "handle_type": [
+                    "self",
+                    "context"
+                ],
+                "resource_factory": [
+                    "self",
+                    "source",
+                    "target"
+                ]
+            }
+        },
+        "python_packaging.gmxapi.src.gmxapi.simulation.modify_input": {
+            "_session_resource_factory": [
+                "input",
+                "output"
+            ],
+            "_standard_node_resource_factory": [],
+            "_run": [
+                "resources"
+            ],
+            "modify_input": [
+                "input",
+                "parameters",
+                "label",
+                "context"
+            ],
+            "OutputDataProxy": {
+                "__init__": [
+                    "self"
+                ]
+            },
+            "PublishingDataProxy": {},
+            "SessionResources": {
+                "__init__": [
+                    "self",
+                    "_simulation_input",
+                    "parameters",
+                    "publisher"
+                ]
+            },
+            "ResourceFactory": {
+                "__init__": [
+                    "self",
+                    "target_context",
+                    "source_context"
+                ],
+                "__call__": [
+                    "self"
+                ],
+                "input_description": [
+                    "self",
+                    "context"
+                ]
+            },
+            "StandardInputDescription": {
+                "_make_uid": [
+                    "cls",
+                    "input"
+                ],
+                "signature": [
+                    "self"
+                ],
+                "make_uid": [
+                    "self",
+                    "input"
+                ]
+            },
+            "RegisteredOperation": {
+                "name": [
+                    "self"
+                ],
+                "namespace": [
+                    "self"
+                ],
+                "director": [
+                    "cls",
+                    "context"
+                ]
+            },
+            "StandardOperationHandle": {
+                "__init__": [
+                    "self",
+                    "resource_manager"
+                ],
+                "run": [
+                    "self"
+                ],
+                "output": [
+                    "self"
+                ]
+            },
+            "StandardDirector": {
+                "__init__": [
+                    "self",
+                    "context"
+                ],
+                "__call__": [
+                    "self",
+                    "resources",
+                    "label"
+                ],
+                "handle_type": [
+                    "self",
+                    "context"
+                ],
+                "resource_factory": [
+                    "self",
+                    "source",
+                    "target"
+                ]
+            }
+        },
+        "python_packaging.gmxapi.src.gmxapi.simulation.workflow": {
+            "to_utf8": [
+                "input"
+            ],
+            "to_string": [
+                "input"
+            ],
+            "get_source_elements": [
+                "workspec"
+            ],
+            "from_tpr": [
+                "input"
+            ],
+            "GmxMap": {
+                "keys": [
+                    "self"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "item"
+                ],
+                "__delitem__": [
+                    "self",
+                    "key"
+                ]
+            },
+            "WorkSpec": {
+                "__init__": [
+                    "self"
+                ],
+                "_context": [
+                    "self",
+                    "context"
+                ],
+                "__chase_deps": [
+                    "self",
+                    "source_set",
+                    "name_list"
+                ],
+                "__iter__": [
+                    "self"
+                ],
+                "__hash__": [
+                    "self"
+                ],
+                "add_element": [
+                    "self",
+                    "element"
+                ],
+                "serialize": [
+                    "self"
+                ],
+                "deserialize": [
+                    "serialized"
+                ],
+                "uid": [
+                    "self"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "__repr__": [
+                    "self"
+                ]
+            },
+            "WorkElement": {
+                "__init__": [
+                    "self",
+                    "namespace",
+                    "operation",
+                    "params",
+                    "depends"
+                ],
+                "namespace": [
+                    "self"
+                ],
+                "operation": [
+                    "self"
+                ],
+                "name": [
+                    "self",
+                    "new_name"
+                ],
+                "workspec": [
+                    "self",
+                    "input"
+                ],
+                "add_dependency": [
+                    "self",
+                    "element"
+                ],
+                "serialize": [
+                    "self"
+                ],
+                "deserialize": [
+                    "cls",
+                    "input",
+                    "name",
+                    "workspec"
+                ]
+            },
+            "SharedDataElement": {
+                "__init__": [
+                    "self",
+                    "params",
+                    "name"
+                ]
+            }
+        },
+        "python_packaging.gmxapi.src.gmxapi.simulation.abc": {
+            "ModuleObject": {}
+        },
+        "python_packaging.gmxapi.src.gmxapi.simulation": {},
+        "tests.physicalvalidation.physical_validation.kinetic_energy": {
+            "mb_ensemble": [
+                "data",
+                "alpha",
+                "verbosity",
+                "screen",
+                "filename"
+            ],
+            "equipartition": [
+                "data",
+                "dtemp",
+                "distribution",
+                "alpha",
+                "molec_groups",
+                "random_divisions",
+                "random_groups",
+                "verbosity",
+                "screen",
+                "filename"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation.integrator": {
+            "convergence": [
+                "simulations",
+                "convergence_test",
+                "verbose",
+                "slope",
+                "screen",
+                "filename"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation.ensemble": {
+            "check": [
+                "data_sim_one",
+                "data_sim_two",
+                "total_energy",
+                "screen",
+                "filename",
+                "verbosity"
+            ],
+            "estimate_interval": [
+                "data",
+                "verbosity",
+                "total_energy"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation": {},
+        "tests.physicalvalidation.physical_validation.util.kinetic_energy": {
+            "isclose": [
+                "a",
+                "b",
+                "rel_tol",
+                "abs_tol"
+            ],
+            "temperature": [
+                "kin",
+                "ndof",
+                "kb"
+            ],
+            "check_mb_ensemble": [
+                "kin",
+                "temp",
+                "ndof",
+                "alpha",
+                "kb",
+                "verbosity",
+                "screen",
+                "filename",
+                "ene_unit"
+            ],
+            "check_equipartition": [
+                "positions",
+                "velocities",
+                "masses",
+                "molec_idx",
+                "molec_nbonds",
+                "natoms",
+                "nmolecs",
+                "ndof_reduction_tra",
+                "ndof_reduction_rot",
+                "dtemp",
+                "temp",
+                "alpha",
+                "molec_groups",
+                "random_divisions",
+                "random_groups",
+                "ndof_molec",
+                "kin_molec",
+                "verbosity",
+                "screen",
+                "filename"
+            ],
+            "calc_system_ndof": [
+                "natoms",
+                "nmolecs",
+                "nbonds",
+                "stop_com_tra",
+                "stop_com_rot"
+            ],
+            "calc_ndof": [
+                "natoms",
+                "nmolecs",
+                "molec_idx",
+                "molec_nbonds",
+                "ndof_reduction_tra",
+                "ndof_reduction_rot"
+            ],
+            "calc_molec_kinetic_energy": [
+                "pos",
+                "vel",
+                "masses",
+                "molec_idx",
+                "natoms",
+                "nmolecs"
+            ],
+            "group_kinetic_energy": [
+                "kin_molec",
+                "nmolecs",
+                "molec_group"
+            ],
+            "group_ndof": [
+                "ndof_molec",
+                "nmolecs",
+                "molec_group"
+            ],
+            "calc_temperatures": [
+                "kin_molec",
+                "ndof_molec",
+                "nmolecs",
+                "molec_group"
+            ],
+            "test_mb_dist": [
+                "kin_molec",
+                "ndof_molec",
+                "nmolecs",
+                "temp",
+                "alpha",
+                "dict_keys",
+                "group",
+                "verbosity",
+                "screen",
+                "filename",
+                "ene_unit"
+            ],
+            "test_temp_diff": [
+                "kin_molec",
+                "ndof_molec",
+                "nmolecs",
+                "dtemp",
+                "dict_keys",
+                "group",
+                "verbosity",
+                "screen",
+                "filename",
+                "ene_unit"
+            ],
+            "test_temp_diff_groups": [
+                "kin_molec",
+                "ndof_molec",
+                "nmolecs",
+                "group1",
+                "group2",
+                "dtemp",
+                "dict_keys",
+                "verbosity"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation.util.gromacs_interface": {
+            "GromacsInterface": {
+                "__init__": [
+                    "self",
+                    "exe",
+                    "dp",
+                    "includepath"
+                ],
+                "exe": [
+                    "self",
+                    "exe"
+                ],
+                "double": [
+                    "self",
+                    "dp"
+                ],
+                "includepath": [
+                    "self",
+                    "path"
+                ],
+                "get_quantities": [
+                    "self",
+                    "edr",
+                    "quantities",
+                    "cwd",
+                    "begin",
+                    "end",
+                    "args"
+                ],
+                "read_trr": [
+                    "self",
+                    "trr"
+                ],
+                "read_gro": [
+                    "gro"
+                ],
+                "read_mdp": [
+                    "mdp"
+                ],
+                "write_mdp": [
+                    "options",
+                    "mdp"
+                ],
+                "read_system_from_top": [
+                    "self",
+                    "top",
+                    "define",
+                    "include"
+                ],
+                "grompp": [
+                    "self",
+                    "mdp",
+                    "top",
+                    "gro",
+                    "tpr",
+                    "cwd",
+                    "args",
+                    "stdin",
+                    "stdout",
+                    "stderr"
+                ],
+                "mdrun": [
+                    "self",
+                    "tpr",
+                    "edr",
+                    "deffnm",
+                    "cwd",
+                    "args",
+                    "stdin",
+                    "stdout",
+                    "stderr",
+                    "mpicmd"
+                ],
+                "_check_exe": [
+                    "self",
+                    "quiet",
+                    "exe"
+                ],
+                "_run": [
+                    "self",
+                    "cmd",
+                    "args",
+                    "cwd",
+                    "stdin",
+                    "stdout",
+                    "stderr",
+                    "mpicmd"
+                ],
+                "_create_xvg": [
+                    "self",
+                    "edr",
+                    "xvg",
+                    "quantities",
+                    "cwd",
+                    "begin",
+                    "end",
+                    "args"
+                ],
+                "_read_top": [
+                    "self",
+                    "filehandler",
+                    "include",
+                    "define"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.util.trajectory": {
+            "equilibrate": [
+                "traj",
+                "verbose",
+                "name"
+            ],
+            "decorrelate": [
+                "traj",
+                "facs",
+                "verbose",
+                "name"
+            ],
+            "cut_tails": [
+                "traj",
+                "cut",
+                "verbose",
+                "name"
+            ],
+            "prepare": [
+                "traj",
+                "cut",
+                "facs",
+                "verbosity",
+                "name"
+            ],
+            "overlap": [
+                "traj1",
+                "traj2",
+                "cut",
+                "verbose",
+                "name"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation.util.plot": {
+            "plot": [
+                "res",
+                "legend",
+                "title",
+                "xlabel",
+                "ylabel",
+                "xlim",
+                "ylim",
+                "inv_x",
+                "inv_y",
+                "sci_x",
+                "sci_y",
+                "axtext",
+                "annotation_location",
+                "filename",
+                "screen"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation.util.integrator": {
+            "calculate_rmsd": [
+                "data",
+                "time",
+                "slope"
+            ],
+            "max_deviation": [
+                "dts",
+                "rmsds"
+            ],
+            "check_convergence": [
+                "const_traj",
+                "convergence_test",
+                "verbose",
+                "slope",
+                "screen",
+                "filename"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation.util.error": {
+            "PhysicalValidationError": {},
+            "InputError": {
+                "__init__": [
+                    "self",
+                    "argument",
+                    "message"
+                ]
+            },
+            "ParserValueNotSetError": {
+                "__init__": [
+                    "self",
+                    "message"
+                ]
+            },
+            "FileFormatError": {
+                "__init__": [
+                    "self",
+                    "argument",
+                    "message"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.util.ensemble": {
+            "generate_histograms": [
+                "traj1",
+                "traj2",
+                "g1",
+                "g2",
+                "bins"
+            ],
+            "do_linear_fit": [
+                "traj1",
+                "traj2",
+                "g1",
+                "g2",
+                "bins",
+                "screen",
+                "filename",
+                "trueslope",
+                "trueoffset",
+                "units"
+            ],
+            "do_max_likelihood_fit": [
+                "traj1",
+                "traj2",
+                "g1",
+                "g2",
+                "init_params",
+                "verbose"
+            ],
+            "check_bins": [
+                "traj1",
+                "traj2",
+                "bins"
+            ],
+            "print_stats": [
+                "title",
+                "fitvals",
+                "dfitvals",
+                "kb",
+                "param1",
+                "param2",
+                "trueslope",
+                "temp",
+                "pvconvert",
+                "dtemp",
+                "dpress",
+                "dmu",
+                "dtempdpress",
+                "dtempdmu"
+            ],
+            "estimate_interval": [
+                "ens_string",
+                "ens_temp",
+                "energy",
+                "kb",
+                "ens_press",
+                "volume",
+                "pvconvert",
+                "verbosity",
+                "cutoff",
+                "tunit",
+                "punit"
+            ],
+            "check_1d": [
+                "traj1",
+                "traj2",
+                "param1",
+                "param2",
+                "kb",
+                "quantity",
+                "dtemp",
+                "dpress",
+                "dmu",
+                "temp",
+                "pvconvert",
+                "nbins",
+                "cutoff",
+                "seed",
+                "verbosity",
+                "screen",
+                "filename"
+            ],
+            "check_2d": [
+                "traj1",
+                "traj2",
+                "param1",
+                "param2",
+                "kb",
+                "pvconvert",
+                "quantity",
+                "dtempdpress",
+                "dtempdmu",
+                "cutoff",
+                "seed",
+                "verbosity",
+                "screen",
+                "filename"
+            ]
+        },
+        "tests.physicalvalidation.physical_validation.util": {},
+        "tests.physicalvalidation.physical_validation.data.unit_data": {
+            "UnitData": {
+                "__init__": [
+                    "self",
+                    "kb",
+                    "energy_conversion",
+                    "length_conversion",
+                    "volume_conversion",
+                    "temperature_conversion",
+                    "pressure_conversion",
+                    "time_conversion",
+                    "energy_str",
+                    "length_str",
+                    "volume_str",
+                    "temperature_str",
+                    "pressure_str",
+                    "time_str"
+                ],
+                "__parsers": [],
+                "units": [
+                    "cls",
+                    "name"
+                ],
+                "__eq__": [
+                    "self",
+                    "other"
+                ],
+                "kb": [
+                    "self"
+                ],
+                "energy_str": [
+                    "self"
+                ],
+                "length_str": [
+                    "self"
+                ],
+                "volume_str": [
+                    "self"
+                ],
+                "temperature_str": [
+                    "self"
+                ],
+                "pressure_str": [
+                    "self"
+                ],
+                "time_str": [
+                    "self"
+                ],
+                "energy_conversion": [
+                    "self"
+                ],
+                "length_conversion": [
+                    "self"
+                ],
+                "volume_conversion": [
+                    "self"
+                ],
+                "temperature_conversion": [
+                    "self"
+                ],
+                "pressure_conversion": [
+                    "self"
+                ],
+                "time_conversion": [
+                    "self"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.ensemble_data": {
+            "EnsembleData": {
+                "ensembles": [],
+                "__init__": [
+                    "self",
+                    "ensemble",
+                    "natoms",
+                    "mu",
+                    "volume",
+                    "pressure",
+                    "energy",
+                    "temperature"
+                ],
+                "ensemble": [
+                    "self"
+                ],
+                "natoms": [
+                    "self"
+                ],
+                "mu": [
+                    "self"
+                ],
+                "volume": [
+                    "self"
+                ],
+                "pressure": [
+                    "self"
+                ],
+                "energy": [
+                    "self"
+                ],
+                "temperature": [
+                    "self"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.observable_data": {
+            "ObservableData": {
+                "observables": [],
+                "__init__": [
+                    "self",
+                    "kinetic_energy",
+                    "potential_energy",
+                    "total_energy",
+                    "volume",
+                    "pressure",
+                    "temperature",
+                    "constant_of_motion"
+                ],
+                "get": [
+                    "self",
+                    "key"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "set": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "kinetic_energy": [
+                    "self",
+                    "kinetic_energy"
+                ],
+                "potential_energy": [
+                    "self",
+                    "potential_energy"
+                ],
+                "total_energy": [
+                    "self",
+                    "total_energy"
+                ],
+                "volume": [
+                    "self",
+                    "volume"
+                ],
+                "pressure": [
+                    "self",
+                    "pressure"
+                ],
+                "temperature": [
+                    "self",
+                    "temperature"
+                ],
+                "constant_of_motion": [
+                    "self",
+                    "constant_of_motion"
+                ],
+                "nframes": [
+                    "self"
+                ],
+                "kinetic_energy_per_molecule": [
+                    "self",
+                    "kinetic_energy"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.trajectory_data": {
+            "TrajectoryData": {
+                "trajectories": [],
+                "__init__": [
+                    "self",
+                    "position",
+                    "velocity"
+                ],
+                "get": [
+                    "self",
+                    "key"
+                ],
+                "__getitem__": [
+                    "self",
+                    "key"
+                ],
+                "set": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "__setitem__": [
+                    "self",
+                    "key",
+                    "value"
+                ],
+                "position": [
+                    "self",
+                    "pos"
+                ],
+                "velocity": [
+                    "self",
+                    "vel"
+                ],
+                "nframes": [
+                    "self"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.simulation_data": {
+            "SimulationData": {
+                "compatible": [
+                    "data_1",
+                    "data_2"
+                ],
+                "__init__": [
+                    "self",
+                    "units",
+                    "dt",
+                    "system",
+                    "ensemble",
+                    "observables",
+                    "trajectory"
+                ],
+                "ensemble": [
+                    "self",
+                    "ensemble"
+                ],
+                "units": [
+                    "self",
+                    "units"
+                ],
+                "observables": [
+                    "self",
+                    "observables"
+                ],
+                "trajectory": [
+                    "self",
+                    "trajectory"
+                ],
+                "system": [
+                    "self",
+                    "system"
+                ],
+                "dt": [
+                    "self",
+                    "dt"
+                ],
+                "set_ensemble": [
+                    "self",
+                    "ensemble",
+                    "natoms",
+                    "mu",
+                    "volume",
+                    "pressure",
+                    "energy",
+                    "temperature"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.gromacs_parser": {
+            "GromacsParser": {
+                "units": [],
+                "__init__": [
+                    "self",
+                    "exe",
+                    "includepath"
+                ],
+                "get_simulation_data": [
+                    "self",
+                    "mdp",
+                    "top",
+                    "edr",
+                    "trr",
+                    "gro"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.system_data": {
+            "SystemData": {
+                "__init__": [
+                    "self",
+                    "natoms",
+                    "nconstraints",
+                    "ndof_reduction_tra",
+                    "ndof_reduction_rot",
+                    "mass",
+                    "molecule_idx",
+                    "nconstraints_per_molecule"
+                ],
+                "natoms": [
+                    "self",
+                    "natoms"
+                ],
+                "nconstraints": [
+                    "self",
+                    "nconstraints"
+                ],
+                "ndof_reduction_tra": [
+                    "self",
+                    "ndof_reduction_tra"
+                ],
+                "ndof_reduction_rot": [
+                    "self",
+                    "ndof_reduction_rot"
+                ],
+                "mass": [
+                    "self",
+                    "mass"
+                ],
+                "molecule_idx": [
+                    "self",
+                    "molecule_idx"
+                ],
+                "nconstraints_per_molecule": [
+                    "self",
+                    "nconstraints_per_molecule"
+                ],
+                "ndof_per_molecule": [
+                    "self",
+                    "ndof_per_molecule"
+                ],
+                "bonds": [
+                    "self",
+                    "bonds"
+                ],
+                "constrained_bonds": [
+                    "self",
+                    "constrained_bonds"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.parser": {
+            "Parser": {
+                "units": [],
+                "get_simulation_data": [
+                    "self"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data.flatfile_parser": {
+            "FlatfileParser": {
+                "__init__": [
+                    "self"
+                ],
+                "get_simulation_data": [
+                    "self",
+                    "units",
+                    "ensemble",
+                    "system",
+                    "dt",
+                    "position_file",
+                    "velocity_file",
+                    "kinetic_ene_file",
+                    "potential_ene_file",
+                    "total_ene_file",
+                    "volume_file",
+                    "pressure_file",
+                    "temperature_file",
+                    "const_of_mot_file"
+                ],
+                "__read_xyz": [
+                    "filename"
+                ],
+                "__read_1d": [
+                    "filename"
+                ]
+            }
+        },
+        "tests.physicalvalidation.physical_validation.data": {}
+    }
+}

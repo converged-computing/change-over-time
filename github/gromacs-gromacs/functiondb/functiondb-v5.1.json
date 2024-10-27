@@ -1,0 +1,2247 @@
+{
+    "v5.1": {
+        "docs.conf": {},
+        "docs.gmxsphinx": {
+            "setup": [
+                "app"
+            ],
+            "MdpNodeParser": {
+                "__init__": [
+                    "self"
+                ],
+                "parse_option": [
+                    "self",
+                    "env",
+                    "text",
+                    "nodes"
+                ],
+                "parse_value": [
+                    "self",
+                    "env",
+                    "text",
+                    "nodes"
+                ]
+            }
+        },
+        "docs.doxygen.graphbuilder": {
+            "main": [],
+            "EdgeType": {
+                "__init__": [
+                    "self",
+                    "value"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "__cmp__": [
+                    "self",
+                    "other"
+                ]
+            },
+            "Edge": {
+                "__init__": [
+                    "self",
+                    "fromnode",
+                    "tonode",
+                    "edgetype"
+                ],
+                "merge_edge": [
+                    "self",
+                    "other"
+                ],
+                "format": [
+                    "self"
+                ]
+            },
+            "Node": {
+                "__init__": [
+                    "self",
+                    "nodename",
+                    "label",
+                    "style",
+                    "properties",
+                    "is_file"
+                ],
+                "add_child": [
+                    "self",
+                    "child"
+                ],
+                "clear_children": [
+                    "self"
+                ],
+                "is_file_node": [
+                    "self"
+                ],
+                "get_nodename": [
+                    "self"
+                ],
+                "get_children": [
+                    "self",
+                    "recursive"
+                ],
+                "format": [
+                    "self"
+                ]
+            },
+            "Graph": {
+                "__init__": [
+                    "self",
+                    "nodes",
+                    "edges"
+                ],
+                "set_options": [
+                    "self",
+                    "left_to_right",
+                    "concentrate"
+                ],
+                "merge_nodes": [
+                    "self",
+                    "nodes",
+                    "target"
+                ],
+                "collapse_node": [
+                    "self",
+                    "node"
+                ],
+                "write": [
+                    "self",
+                    "outfile"
+                ]
+            },
+            "GraphBuilder": {
+                "__init__": [
+                    "self",
+                    "tree"
+                ],
+                "_create_file_node": [
+                    "self",
+                    "fileobj",
+                    "filenodes"
+                ],
+                "_get_file_edge_type": [
+                    "self",
+                    "fromfile",
+                    "tofile"
+                ],
+                "_create_file_edge": [
+                    "self",
+                    "fromfile",
+                    "tofile",
+                    "filenodes"
+                ],
+                "_create_file_edges": [
+                    "self",
+                    "filenodes"
+                ],
+                "_get_module_color": [
+                    "self",
+                    "modulegroup"
+                ],
+                "_create_module_node": [
+                    "self",
+                    "module"
+                ],
+                "_create_module_edges": [
+                    "self",
+                    "modulenodes"
+                ],
+                "create_modules_graph": [
+                    "self"
+                ],
+                "create_module_file_graph": [
+                    "self",
+                    "module"
+                ]
+            }
+        },
+        "docs.doxygen.check-source": {
+            "check_file": [
+                "fileobj",
+                "tree",
+                "reporter"
+            ],
+            "check_include": [
+                "fileobj",
+                "includedfile",
+                "reporter"
+            ],
+            "check_entity": [
+                "entity",
+                "reporter"
+            ],
+            "check_class": [
+                "classobj",
+                "reporter"
+            ],
+            "check_member": [
+                "member",
+                "reporter",
+                "check_ignored"
+            ],
+            "check_cycles": [
+                "graph",
+                "reporter"
+            ],
+            "check_all": [
+                "tree",
+                "reporter",
+                "check_ignored"
+            ],
+            "main": [],
+            "ModuleDependencyGraph": {
+                "__init__": [
+                    "self",
+                    "tree"
+                ],
+                "iternodes": [
+                    "self"
+                ],
+                "iteredges": [
+                    "self",
+                    "module"
+                ],
+                "report_cycle": [
+                    "self",
+                    "cycle",
+                    "reporter"
+                ]
+            }
+        },
+        "docs.doxygen.gmxtree": {
+            "_get_api_type_for_compound": [
+                "grouplist"
+            ],
+            "IncludedFile": {
+                "__init__": [
+                    "self",
+                    "including_file",
+                    "lineno",
+                    "included_file",
+                    "included_path",
+                    "is_relative",
+                    "is_system",
+                    "line"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "is_system": [
+                    "self"
+                ],
+                "is_relative": [
+                    "self"
+                ],
+                "get_included_path": [
+                    "self"
+                ],
+                "get_including_file": [
+                    "self"
+                ],
+                "get_file": [
+                    "self"
+                ],
+                "get_line_number": [
+                    "self"
+                ],
+                "get_full_line": [
+                    "self"
+                ],
+                "get_reporter_location": [
+                    "self"
+                ]
+            },
+            "IncludeBlock": {
+                "__init__": [
+                    "self",
+                    "first_included_file"
+                ],
+                "add_file": [
+                    "self",
+                    "included_file"
+                ],
+                "get_includes": [
+                    "self"
+                ],
+                "get_first_line": [
+                    "self"
+                ],
+                "get_last_line": [
+                    "self"
+                ]
+            },
+            "File": {
+                "__init__": [
+                    "self",
+                    "abspath",
+                    "relpath",
+                    "directory"
+                ],
+                "set_doc_xml": [
+                    "self",
+                    "rawdoc",
+                    "sourcetree"
+                ],
+                "set_installed": [
+                    "self"
+                ],
+                "set_git_filter_attribute": [
+                    "self",
+                    "filtername"
+                ],
+                "set_main_header": [
+                    "self",
+                    "included_file"
+                ],
+                "_process_include": [
+                    "self",
+                    "lineno",
+                    "is_system",
+                    "includedpath",
+                    "line",
+                    "sourcetree"
+                ],
+                "scan_contents": [
+                    "self",
+                    "sourcetree",
+                    "keep_contents",
+                    "detect_defines"
+                ],
+                "add_used_defines": [
+                    "self",
+                    "define_file",
+                    "defines"
+                ],
+                "get_reporter_location": [
+                    "self"
+                ],
+                "is_installed": [
+                    "self"
+                ],
+                "is_external": [
+                    "self"
+                ],
+                "is_source_file": [
+                    "self"
+                ],
+                "is_test_file": [
+                    "self"
+                ],
+                "should_includes_be_sorted": [
+                    "self"
+                ],
+                "is_documented": [
+                    "self"
+                ],
+                "has_brief_description": [
+                    "self"
+                ],
+                "get_abspath": [
+                    "self"
+                ],
+                "get_relpath": [
+                    "self"
+                ],
+                "get_name": [
+                    "self"
+                ],
+                "get_directory": [
+                    "self"
+                ],
+                "get_doc_type": [
+                    "self"
+                ],
+                "get_api_type": [
+                    "self"
+                ],
+                "api_type_is_reliable": [
+                    "self"
+                ],
+                "is_public": [
+                    "self"
+                ],
+                "is_module_internal": [
+                    "self"
+                ],
+                "get_expected_module": [
+                    "self"
+                ],
+                "get_doc_modules": [
+                    "self"
+                ],
+                "get_module": [
+                    "self"
+                ],
+                "get_includes": [
+                    "self"
+                ],
+                "get_include_blocks": [
+                    "self"
+                ],
+                "_get_included_files_recurse": [
+                    "self",
+                    "result"
+                ],
+                "get_included_files": [
+                    "self",
+                    "recursive"
+                ],
+                "get_main_header": [
+                    "self"
+                ],
+                "get_contents": [
+                    "self"
+                ],
+                "get_declared_defines": [
+                    "self"
+                ],
+                "get_used_define_files": [
+                    "self"
+                ]
+            },
+            "GeneratedFile": {
+                "__init__": [
+                    "self",
+                    "abspath",
+                    "relpath",
+                    "directory"
+                ],
+                "scan_contents": [
+                    "self",
+                    "sourcetree",
+                    "keep_contents",
+                    "detect_defines"
+                ],
+                "set_generator_source": [
+                    "self",
+                    "sourcefile"
+                ],
+                "get_generator_source": [
+                    "self"
+                ],
+                "get_reporter_location": [
+                    "self"
+                ],
+                "get_declared_defines": [
+                    "self"
+                ]
+            },
+            "GeneratorSourceFile": {},
+            "Directory": {
+                "__init__": [
+                    "self",
+                    "abspath",
+                    "relpath",
+                    "parent"
+                ],
+                "set_doc_xml": [
+                    "self",
+                    "rawdoc",
+                    "sourcetree"
+                ],
+                "set_module": [
+                    "self",
+                    "module"
+                ],
+                "add_file": [
+                    "self",
+                    "fileobj"
+                ],
+                "get_name": [
+                    "self"
+                ],
+                "get_reporter_location": [
+                    "self"
+                ],
+                "get_abspath": [
+                    "self"
+                ],
+                "get_relpath": [
+                    "self"
+                ],
+                "is_test_directory": [
+                    "self"
+                ],
+                "is_external": [
+                    "self"
+                ],
+                "has_installed_files": [
+                    "self"
+                ],
+                "get_module": [
+                    "self"
+                ],
+                "get_subdirectories": [
+                    "self"
+                ],
+                "get_files": [
+                    "self"
+                ],
+                "contains": [
+                    "self",
+                    "fileobj"
+                ]
+            },
+            "ModuleDependency": {
+                "__init__": [
+                    "self",
+                    "othermodule"
+                ],
+                "add_included_file": [
+                    "self",
+                    "includedfile"
+                ],
+                "set_cycle_suppression": [
+                    "self"
+                ],
+                "is_cycle_suppressed": [
+                    "self"
+                ],
+                "is_test_only_dependency": [
+                    "self"
+                ],
+                "get_other_module": [
+                    "self"
+                ],
+                "get_included_files": [
+                    "self"
+                ]
+            },
+            "Module": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "rootdir"
+                ],
+                "set_doc_xml": [
+                    "self",
+                    "rawdoc",
+                    "sourcetree"
+                ],
+                "add_dependency": [
+                    "self",
+                    "othermodule",
+                    "includedfile"
+                ],
+                "is_documented": [
+                    "self"
+                ],
+                "get_name": [
+                    "self"
+                ],
+                "get_root_dir": [
+                    "self"
+                ],
+                "get_files": [
+                    "self"
+                ],
+                "get_group": [
+                    "self"
+                ],
+                "get_dependencies": [
+                    "self"
+                ]
+            },
+            "Namespace": {
+                "__init__": [
+                    "self",
+                    "rawdoc"
+                ],
+                "is_anonymous": [
+                    "self"
+                ]
+            },
+            "Class": {
+                "__init__": [
+                    "self",
+                    "rawdoc",
+                    "files"
+                ],
+                "get_name": [
+                    "self"
+                ],
+                "get_reporter_location": [
+                    "self"
+                ],
+                "get_files": [
+                    "self"
+                ],
+                "is_documented": [
+                    "self"
+                ],
+                "has_brief_description": [
+                    "self"
+                ],
+                "get_doc_type": [
+                    "self"
+                ],
+                "get_file_doc_type": [
+                    "self"
+                ],
+                "is_in_installed_file": [
+                    "self"
+                ]
+            },
+            "Member": {
+                "__init__": [
+                    "self",
+                    "rawdoc",
+                    "namespace"
+                ],
+                "get_name": [
+                    "self"
+                ],
+                "get_reporter_location": [
+                    "self"
+                ],
+                "is_documented": [
+                    "self"
+                ],
+                "has_brief_description": [
+                    "self"
+                ],
+                "has_inbody_description": [
+                    "self"
+                ],
+                "is_visible": [
+                    "self"
+                ]
+            },
+            "GromacsTree": {
+                "__init__": [
+                    "self",
+                    "source_root",
+                    "build_root",
+                    "reporter"
+                ],
+                "_get_rel_path": [
+                    "self",
+                    "path"
+                ],
+                "_walk_dir": [
+                    "self",
+                    "rootpath"
+                ],
+                "_create_module": [
+                    "self",
+                    "rootdir"
+                ],
+                "scan_files": [
+                    "self",
+                    "only_files",
+                    "keep_contents"
+                ],
+                "load_xml": [
+                    "self",
+                    "only_files"
+                ],
+                "_load_dirs": [
+                    "self"
+                ],
+                "_load_dir": [
+                    "self",
+                    "dirdoc",
+                    "parent"
+                ],
+                "_load_modules": [
+                    "self"
+                ],
+                "_load_files": [
+                    "self"
+                ],
+                "_load_namespaces": [
+                    "self"
+                ],
+                "_load_classes": [
+                    "self"
+                ],
+                "_load_members": [
+                    "self"
+                ],
+                "_get_dir": [
+                    "self",
+                    "relpath"
+                ],
+                "get_file": [
+                    "self",
+                    "path"
+                ],
+                "find_include_file": [
+                    "self",
+                    "includedpath"
+                ],
+                "load_git_attributes": [
+                    "self"
+                ],
+                "find_define_file_uses": [
+                    "self"
+                ],
+                "load_installed_file_list": [
+                    "self"
+                ],
+                "load_cycle_suppression_list": [
+                    "self",
+                    "filename"
+                ],
+                "get_object": [
+                    "self",
+                    "docobj"
+                ],
+                "get_files": [
+                    "self"
+                ],
+                "get_modules": [
+                    "self"
+                ],
+                "get_classes": [
+                    "self"
+                ],
+                "get_members": [
+                    "self"
+                ],
+                "get_checked_define_files": [
+                    "self"
+                ]
+            }
+        },
+        "docs.doxygen.includesorter": {
+            "main": [],
+            "IncludeGroup": {
+                "__init__": [
+                    "self",
+                    "value"
+                ],
+                "__cmp__": [
+                    "self",
+                    "other"
+                ]
+            },
+            "GroupedSorter": {
+                "__init__": [
+                    "self",
+                    "style",
+                    "absolute"
+                ],
+                "_get_path": [
+                    "self",
+                    "included_file",
+                    "group",
+                    "including_file"
+                ],
+                "_get_gmx_group": [
+                    "self",
+                    "including_file",
+                    "included_file"
+                ],
+                "get_sortable_object": [
+                    "self",
+                    "include"
+                ],
+                "format_include": [
+                    "self",
+                    "obj",
+                    "prev"
+                ]
+            },
+            "IncludeSorter": {
+                "__init__": [
+                    "self",
+                    "sortmethod",
+                    "quiet"
+                ],
+                "_sort_include_block": [
+                    "self",
+                    "block",
+                    "lines"
+                ],
+                "sort_includes": [
+                    "self",
+                    "fileobj"
+                ],
+                "check_sorted": [
+                    "self",
+                    "fileobj"
+                ]
+            }
+        },
+        "docs.doxygen.doxygenxml": {
+            "doxygenxml._show_list": [
+                "title",
+                "objlist"
+            ],
+            "doxygenxml.DocType": {
+                "__init__": [
+                    "self",
+                    "value"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "__cmp__": [
+                    "self",
+                    "other"
+                ]
+            },
+            "doxygenxml.Location": {
+                "__init__": [
+                    "self",
+                    "elem"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "get_reporter_location": [
+                    "self"
+                ],
+                "get_full_string": [
+                    "self"
+                ]
+            },
+            "doxygenxml.BodyLocation": {
+                "__init__": [
+                    "self",
+                    "elem"
+                ],
+                "__cmp__": [
+                    "self",
+                    "other"
+                ],
+                "__hash__": [
+                    "self"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "get_full_string": [
+                    "self"
+                ]
+            },
+            "doxygenxml.LocationWithBody": {
+                "__init__": [
+                    "self",
+                    "elem"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "get_reporter_location": [
+                    "self"
+                ],
+                "get_location": [
+                    "self"
+                ],
+                "get_body_location": [
+                    "self"
+                ],
+                "has_same_body_location": [
+                    "self"
+                ]
+            },
+            "doxygenxml.MemberSection": {
+                "__init__": [
+                    "self",
+                    "kind"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "add_member": [
+                    "self",
+                    "member"
+                ],
+                "replace_member": [
+                    "self",
+                    "old",
+                    "new"
+                ]
+            },
+            "doxygenxml.Entity": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "refid"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "_get_reporter": [
+                    "self"
+                ],
+                "set_documentation_set": [
+                    "self",
+                    "docset"
+                ],
+                "get_id": [
+                    "self"
+                ],
+                "get_name": [
+                    "self"
+                ],
+                "get_reporter_location": [
+                    "self"
+                ],
+                "get_visibility": [
+                    "self"
+                ],
+                "is_documented": [
+                    "self"
+                ],
+                "has_brief_description": [
+                    "self"
+                ],
+                "has_inbody_description": [
+                    "self"
+                ],
+                "_process_descriptions": [
+                    "self",
+                    "briefelem",
+                    "detailselem",
+                    "inbodyelem"
+                ],
+                "show_base": [
+                    "self"
+                ]
+            },
+            "doxygenxml.Member": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "refid"
+                ],
+                "add_parent_compound": [
+                    "self",
+                    "compound"
+                ],
+                "merge_definition": [
+                    "self",
+                    "definition"
+                ],
+                "load_details_from_element": [
+                    "self",
+                    "rootelem",
+                    "xmlpath"
+                ],
+                "_load_element": [
+                    "self",
+                    "element"
+                ],
+                "_get_raw_location": [
+                    "self"
+                ],
+                "get_reporter_location": [
+                    "self"
+                ],
+                "get_location": [
+                    "self"
+                ],
+                "get_body_location": [
+                    "self"
+                ],
+                "has_same_body_location": [
+                    "self"
+                ],
+                "get_namespace": [
+                    "self"
+                ],
+                "get_parent_compounds": [
+                    "self"
+                ],
+                "get_inherited_visibility": [
+                    "self"
+                ],
+                "show": [
+                    "self"
+                ]
+            },
+            "doxygenxml.Define": {},
+            "doxygenxml.Variable": {},
+            "doxygenxml.Typedef": {},
+            "doxygenxml.Enum": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "refid"
+                ],
+                "_load_element": [
+                    "self",
+                    "elem"
+                ],
+                "get_values": [
+                    "self"
+                ]
+            },
+            "doxygenxml.EnumValue": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "refid"
+                ],
+                "set_enum": [
+                    "self",
+                    "member"
+                ],
+                "_get_raw_location": [
+                    "self"
+                ]
+            },
+            "doxygenxml.Function": {},
+            "doxygenxml.FriendDeclaration": {},
+            "doxygenxml.Compound": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "refid"
+                ],
+                "_get_xml_path": [
+                    "self"
+                ],
+                "add_member": [
+                    "self",
+                    "member"
+                ],
+                "add_group": [
+                    "self",
+                    "compound"
+                ],
+                "replace_member": [
+                    "self",
+                    "old",
+                    "new"
+                ],
+                "load_details": [
+                    "self"
+                ],
+                "_unexpected_inner_compound": [
+                    "self",
+                    "typename",
+                    "compound"
+                ],
+                "_load_inner_file": [
+                    "self",
+                    "compound"
+                ],
+                "_load_inner_dir": [
+                    "self",
+                    "compound"
+                ],
+                "_load_inner_group": [
+                    "self",
+                    "compound"
+                ],
+                "_load_inner_namespace": [
+                    "self",
+                    "compound"
+                ],
+                "_load_inner_class": [
+                    "self",
+                    "compound"
+                ],
+                "_load_element": [
+                    "self",
+                    "element"
+                ],
+                "get_groups": [
+                    "self"
+                ],
+                "show_base": [
+                    "self"
+                ],
+                "show_members": [
+                    "self"
+                ]
+            },
+            "doxygenxml.File": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "refid"
+                ],
+                "_load_inner_class": [
+                    "self",
+                    "compound"
+                ],
+                "_load_inner_namespace": [
+                    "self",
+                    "compound"
+                ],
+                "_load_element": [
+                    "self",
+                    "elem"
+                ],
+                "set_directory": [
+                    "self",
+                    "directory"
+                ],
+                "get_reporter_location": [
+                    "self"
+                ],
+                "get_path": [
+                    "self"
+                ],
+                "get_directory": [
+                    "self"
+                ],
+                "is_source_file": [
+                    "self"
+                ],
+                "show": [
+                    "self"
+                ]
+            },
+            "doxygenxml.Directory": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "refid"
+                ],
+                "_load_inner_file": [
+                    "self",
+                    "compound"
+                ],
+                "_load_inner_dir": [
+                    "self",
+                    "compound"
+                ],
+                "_load_element": [
+                    "self",
+                    "elem"
+                ],
+                "get_reporter_location": [
+                    "self"
+                ],
+                "get_path": [
+                    "self"
+                ],
+                "get_parent": [
+                    "self"
+                ],
+                "get_subdirectories": [
+                    "self"
+                ],
+                "show": [
+                    "self"
+                ]
+            },
+            "doxygenxml.Group": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "refid"
+                ],
+                "_load_inner_file": [
+                    "self",
+                    "compound"
+                ],
+                "_load_inner_group": [
+                    "self",
+                    "compound"
+                ],
+                "_load_inner_namespace": [
+                    "self",
+                    "compound"
+                ],
+                "_load_inner_class": [
+                    "self",
+                    "compound"
+                ],
+                "_load_element": [
+                    "self",
+                    "elem"
+                ],
+                "show": [
+                    "self"
+                ]
+            },
+            "doxygenxml.Namespace": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "refid"
+                ],
+                "_load_inner_namespace": [
+                    "self",
+                    "compound"
+                ],
+                "_load_inner_class": [
+                    "self",
+                    "compound"
+                ],
+                "_load_element": [
+                    "self",
+                    "elem"
+                ],
+                "add_file": [
+                    "self",
+                    "compound"
+                ],
+                "get_reporter_location": [
+                    "self"
+                ],
+                "is_anonymous": [
+                    "self"
+                ],
+                "show": [
+                    "self"
+                ]
+            },
+            "doxygenxml.Class": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "refid"
+                ],
+                "_load_inner_class": [
+                    "self",
+                    "compound"
+                ],
+                "_load_element": [
+                    "self",
+                    "elem"
+                ],
+                "add_file": [
+                    "self",
+                    "compound"
+                ],
+                "set_namespace": [
+                    "self",
+                    "compound"
+                ],
+                "set_outer_class": [
+                    "self",
+                    "compound"
+                ],
+                "get_reporter_location": [
+                    "self"
+                ],
+                "get_files": [
+                    "self"
+                ],
+                "is_local": [
+                    "self"
+                ],
+                "show": [
+                    "self"
+                ]
+            },
+            "doxygenxml._get_compound_type_from_kind": [
+                "kind"
+            ],
+            "doxygenxml._get_member_type_from_kind": [
+                "kind"
+            ],
+            "doxygenxml.DocumentationSet": {
+                "__init__": [
+                    "self",
+                    "xmlroot",
+                    "reporter"
+                ],
+                "load_file_details": [
+                    "self",
+                    "filelist"
+                ],
+                "load_details": [
+                    "self"
+                ],
+                "merge_duplicates": [
+                    "self"
+                ],
+                "get_reporter": [
+                    "self"
+                ],
+                "get_xmlroot": [
+                    "self"
+                ],
+                "get_compound": [
+                    "self",
+                    "refid"
+                ],
+                "get_member": [
+                    "self",
+                    "refid"
+                ],
+                "get_compounds": [
+                    "self",
+                    "types",
+                    "predicate"
+                ],
+                "get_members": [
+                    "self",
+                    "types",
+                    "predicate"
+                ],
+                "get_files": [
+                    "self",
+                    "paths"
+                ],
+                "get_directories": [
+                    "self",
+                    "paths"
+                ],
+                "get_groups": [
+                    "self",
+                    "name"
+                ],
+                "get_namespaces": [
+                    "self",
+                    "name"
+                ],
+                "get_classes": [
+                    "self",
+                    "name"
+                ],
+                "get_functions": [
+                    "self",
+                    "name"
+                ]
+            },
+            "doxygenxml.main": []
+        },
+        "docs.doxygen.reporter": {
+            "Location": {
+                "__init__": [
+                    "self",
+                    "filename",
+                    "line"
+                ],
+                "__nonzero__": [
+                    "self"
+                ],
+                "__str__": [
+                    "self"
+                ],
+                "__cmp__": [
+                    "self",
+                    "other"
+                ]
+            },
+            "Message": {
+                "__init__": [
+                    "self",
+                    "message",
+                    "details",
+                    "filename",
+                    "location"
+                ],
+                "__cmp__": [
+                    "self",
+                    "other"
+                ]
+            },
+            "Filter": {
+                "__init__": [
+                    "self",
+                    "filterline"
+                ],
+                "matches": [
+                    "self",
+                    "message"
+                ],
+                "get_match_count": [
+                    "self"
+                ],
+                "get_text": [
+                    "self"
+                ]
+            },
+            "Reporter": {
+                "__init__": [
+                    "self",
+                    "logfile",
+                    "quiet"
+                ],
+                "_write": [
+                    "self",
+                    "message"
+                ],
+                "_report": [
+                    "self",
+                    "message"
+                ],
+                "load_filters": [
+                    "self",
+                    "filterfile"
+                ],
+                "write_pending": [
+                    "self"
+                ],
+                "report_unused_filters": [
+                    "self"
+                ],
+                "had_warnings": [
+                    "self"
+                ],
+                "close_log": [
+                    "self"
+                ],
+                "xml_assert": [
+                    "self",
+                    "xmlpath",
+                    "message"
+                ],
+                "input_error": [
+                    "self",
+                    "message"
+                ],
+                "file_error": [
+                    "self",
+                    "fileobj",
+                    "message"
+                ],
+                "code_issue": [
+                    "self",
+                    "entity",
+                    "message",
+                    "details"
+                ],
+                "cyclic_issue": [
+                    "self",
+                    "message",
+                    "details"
+                ],
+                "doc_error": [
+                    "self",
+                    "entity",
+                    "message"
+                ],
+                "doc_note": [
+                    "self",
+                    "entity",
+                    "message"
+                ]
+            }
+        },
+        "admin.copyright": {
+            "select_comment_handler": [
+                "override",
+                "filename"
+            ],
+            "create_copyright_header": [
+                "years",
+                "other_copyrights",
+                "language"
+            ],
+            "process_options": [],
+            "main": [],
+            "CopyrightState": {
+                "__init__": [
+                    "self",
+                    "has_copyright",
+                    "is_correct",
+                    "is_newstyle",
+                    "years",
+                    "other_copyrights"
+                ]
+            },
+            "CopyrightChecker": {
+                "check_copyright": [
+                    "self",
+                    "comment_block"
+                ],
+                "process_copyright": [
+                    "self",
+                    "state",
+                    "options",
+                    "current_years",
+                    "reporter"
+                ],
+                "get_copyright_text": [
+                    "self",
+                    "years",
+                    "other_copyrights"
+                ]
+            },
+            "Reporter": {
+                "__init__": [
+                    "self",
+                    "reportfile",
+                    "filename"
+                ],
+                "report": [
+                    "self",
+                    "text"
+                ]
+            },
+            "CommentHandlerC": {
+                "extract_first_comment_block": [
+                    "self",
+                    "content_lines"
+                ],
+                "create_comment_block": [
+                    "self",
+                    "lines"
+                ]
+            },
+            "CommentHandlerSimple": {
+                "__init__": [
+                    "self",
+                    "comment_char"
+                ],
+                "extract_first_comment_block": [
+                    "self",
+                    "content_lines"
+                ],
+                "create_comment_block": [
+                    "self",
+                    "lines"
+                ]
+            }
+        },
+        "scripts.make_gromos_rtp": {
+            "make_gromos_rtp.translate": [
+                "t"
+            ],
+            "make_gromos_rtp.findbonds": [
+                "atomnumber"
+            ],
+            "make_gromos_rtp.Cin": {
+                "__init__": [
+                    "self",
+                    "filename"
+                ],
+                "index": [
+                    "self"
+                ],
+                "mkres": [
+                    "self"
+                ],
+                "gets": [
+                    "self",
+                    "list",
+                    "string"
+                ],
+                "getRESname": [
+                    "self",
+                    "res"
+                ],
+                "getNATOM": [
+                    "self",
+                    "res"
+                ],
+                "getEXCLUS": [
+                    "self",
+                    "res"
+                ],
+                "getATOM": [
+                    "self",
+                    "res"
+                ],
+                "getATOMtr": [
+                    "self",
+                    "res"
+                ],
+                "getBOND": [
+                    "self",
+                    "res"
+                ],
+                "getNBA": [
+                    "self",
+                    "res"
+                ],
+                "getNIDA": [
+                    "self",
+                    "res"
+                ],
+                "getNDA": [
+                    "self",
+                    "res"
+                ]
+            }
+        },
+        "src.gromacs.mdlib.nbnxn_kernels.nbnxn_kernel_file_generator.make_verlet_simd_kernel_files": {
+            "read_kernel_template": [
+                "filename"
+            ]
+        },
+        "src.gromacs.gmxlib.nonbonded.nb_kernel_sse2_single.make_nb_kernel_sse2_single": {
+            "make_nb_kernel_sse2_single.MakeKernelFileName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom"
+            ],
+            "make_nb_kernel_sse2_single.MakeKernelName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_sse2_single.MakeKernelDecl": [
+                "KernelName",
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelOther",
+                "KernelVF"
+            ],
+            "make_nb_kernel_sse2_single.KeepKernel": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_sse2_single.SetDefines": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF",
+                "defines"
+            ],
+            "make_nb_kernel_sse2_single.PrintStatistics": [
+                "ratio"
+            ]
+        },
+        "src.gromacs.gmxlib.nonbonded.nb_kernel_sse2_double.make_nb_kernel_sse2_double": {
+            "make_nb_kernel_sse2_double.MakeKernelFileName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom"
+            ],
+            "make_nb_kernel_sse2_double.MakeKernelName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_sse2_double.MakeKernelDecl": [
+                "KernelName",
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelOther",
+                "KernelVF"
+            ],
+            "make_nb_kernel_sse2_double.KeepKernel": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_sse2_double.SetDefines": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF",
+                "defines"
+            ],
+            "make_nb_kernel_sse2_double.PrintStatistics": [
+                "ratio"
+            ]
+        },
+        "src.gromacs.gmxlib.nonbonded.nb_kernel_c.make_nb_kernel_c": {
+            "make_nb_kernel_c.MakeKernelFileName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom"
+            ],
+            "make_nb_kernel_c.MakeKernelName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_c.MakeKernelDecl": [
+                "KernelName",
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelOther",
+                "KernelVF"
+            ],
+            "make_nb_kernel_c.KeepKernel": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_c.SetDefines": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF",
+                "defines"
+            ],
+            "make_nb_kernel_c.PrintStatistics": [
+                "ratio"
+            ]
+        },
+        "src.gromacs.gmxlib.nonbonded.nb_kernel_adress_c.make_nb_kernel_adress_c": {
+            "make_nb_kernel_adress_c.MakeKernelFileName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelRes"
+            ],
+            "make_nb_kernel_adress_c.MakeKernelName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF",
+                "KernelRes"
+            ],
+            "make_nb_kernel_adress_c.MakeKernelDecl": [
+                "KernelName",
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelOther",
+                "KernelVF"
+            ],
+            "make_nb_kernel_adress_c.KeepKernel": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_adress_c.SetDefines": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF",
+                "defines"
+            ],
+            "make_nb_kernel_adress_c.PrintStatistics": [
+                "ratio"
+            ]
+        },
+        "src.gromacs.gmxlib.nonbonded.nb_kernel_sse4_1_single.make_nb_kernel_sse4_1_single": {
+            "make_nb_kernel_sse4_1_single.MakeKernelFileName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom"
+            ],
+            "make_nb_kernel_sse4_1_single.MakeKernelName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_sse4_1_single.MakeKernelDecl": [
+                "KernelName",
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelOther",
+                "KernelVF"
+            ],
+            "make_nb_kernel_sse4_1_single.KeepKernel": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_sse4_1_single.SetDefines": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF",
+                "defines"
+            ],
+            "make_nb_kernel_sse4_1_single.PrintStatistics": [
+                "ratio"
+            ]
+        },
+        "src.gromacs.gmxlib.nonbonded.nb_kernel_avx_256_double.make_nb_kernel_avx_256_double": {
+            "make_nb_kernel_avx_256_double.MakeKernelFileName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom"
+            ],
+            "make_nb_kernel_avx_256_double.MakeKernelName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_avx_256_double.MakeKernelDecl": [
+                "KernelName",
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelOther",
+                "KernelVF"
+            ],
+            "make_nb_kernel_avx_256_double.KeepKernel": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_avx_256_double.SetDefines": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF",
+                "defines"
+            ],
+            "make_nb_kernel_avx_256_double.PrintStatistics": [
+                "ratio"
+            ]
+        },
+        "src.gromacs.gmxlib.nonbonded.nb_kernel_avx_128_fma_single.make_nb_kernel_avx_128_fma_single": {
+            "make_nb_kernel_avx_128_fma_single.MakeKernelFileName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom"
+            ],
+            "make_nb_kernel_avx_128_fma_single.MakeKernelName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_avx_128_fma_single.MakeKernelDecl": [
+                "KernelName",
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelOther",
+                "KernelVF"
+            ],
+            "make_nb_kernel_avx_128_fma_single.KeepKernel": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_avx_128_fma_single.SetDefines": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF",
+                "defines"
+            ],
+            "make_nb_kernel_avx_128_fma_single.PrintStatistics": [
+                "ratio"
+            ]
+        },
+        "src.gromacs.gmxlib.nonbonded.nb_kernel_avx_256_single.make_nb_kernel_avx_256_single": {
+            "make_nb_kernel_avx_256_single.MakeKernelFileName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom"
+            ],
+            "make_nb_kernel_avx_256_single.MakeKernelName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_avx_256_single.MakeKernelDecl": [
+                "KernelName",
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelOther",
+                "KernelVF"
+            ],
+            "make_nb_kernel_avx_256_single.KeepKernel": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_avx_256_single.SetDefines": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF",
+                "defines"
+            ],
+            "make_nb_kernel_avx_256_single.PrintStatistics": [
+                "ratio"
+            ]
+        },
+        "src.gromacs.gmxlib.nonbonded.preprocessor.gmxpreprocess": {
+            "gmxpreprocess.PreprocessError": {
+                "__init__": [
+                    "self",
+                    "errmsg",
+                    "file",
+                    "lineno",
+                    "line"
+                ],
+                "__str__": [
+                    "self"
+                ]
+            },
+            "gmxpreprocess._Logger": {
+                "__init__": [
+                    "self",
+                    "name",
+                    "level",
+                    "streamOrFileName"
+                ],
+                "__del__": [
+                    "self"
+                ],
+                "getLevel": [
+                    "self"
+                ],
+                "setLevel": [
+                    "self",
+                    "level"
+                ],
+                "_getLevelName": [
+                    "self",
+                    "level"
+                ],
+                "isEnabled": [
+                    "self",
+                    "level"
+                ],
+                "isDebugEnabled": [
+                    "self"
+                ],
+                "isInfoEnabled": [
+                    "self"
+                ],
+                "isWarnEnabled": [
+                    "self"
+                ],
+                "isErrorEnabled": [
+                    "self"
+                ],
+                "isFatalEnabled": [
+                    "self"
+                ],
+                "log": [
+                    "self",
+                    "level",
+                    "msg",
+                    "args"
+                ],
+                "debug": [
+                    "self",
+                    "msg"
+                ],
+                "info": [
+                    "self",
+                    "msg",
+                    "args"
+                ],
+                "warn": [
+                    "self",
+                    "msg",
+                    "args"
+                ],
+                "error": [
+                    "self",
+                    "msg",
+                    "args"
+                ],
+                "fatal": [
+                    "self",
+                    "msg",
+                    "args"
+                ]
+            },
+            "gmxpreprocess.SubstituteInternal": [
+                "expr",
+                "defines"
+            ],
+            "gmxpreprocess.SubstituteInCode": [
+                "expr",
+                "defines"
+            ],
+            "gmxpreprocess._evaluate": [
+                "expr",
+                "defines"
+            ],
+            "gmxpreprocess.gmxpreprocess": [
+                "infile",
+                "outfile",
+                "defines",
+                "force",
+                "keepLines",
+                "includePath",
+                "substitute",
+                "contentType",
+                "contentTypesRegistry",
+                "preprocessedFiles"
+            ],
+            "gmxpreprocess.ContentTypesRegistry": {
+                "__init__": [
+                    "self",
+                    "contentTypesPaths"
+                ],
+                "_load": [
+                    "self"
+                ],
+                "_loadContentType": [
+                    "self",
+                    "content",
+                    "path"
+                ],
+                "getContentType": [
+                    "self",
+                    "path"
+                ]
+            },
+            "gmxpreprocess.getDefaultContentTypesRegistry": [],
+            "gmxpreprocess.reversed": [
+                "seq"
+            ],
+            "gmxpreprocess.sorted": [
+                "seq",
+                "key"
+            ],
+            "gmxpreprocess.main": [
+                "argv"
+            ]
+        },
+        "src.gromacs.gmxlib.nonbonded.nb_kernel_sparc64_hpc_ace_double.make_nb_kernel_sparc64_hpc_ace_double": {
+            "make_nb_kernel_sparc64_hpc_ace_double.MakeKernelFileName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom"
+            ],
+            "make_nb_kernel_sparc64_hpc_ace_double.MakeKernelName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_sparc64_hpc_ace_double.MakeKernelDecl": [
+                "KernelName",
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelOther",
+                "KernelVF"
+            ],
+            "make_nb_kernel_sparc64_hpc_ace_double.KeepKernel": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_sparc64_hpc_ace_double.SetDefines": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF",
+                "defines"
+            ],
+            "make_nb_kernel_sparc64_hpc_ace_double.PrintStatistics": [
+                "ratio"
+            ]
+        },
+        "src.gromacs.gmxlib.nonbonded.nb_kernel_sse4_1_double.make_nb_kernel_sse4_1_double": {
+            "make_nb_kernel_sse4_1_double.MakeKernelFileName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom"
+            ],
+            "make_nb_kernel_sse4_1_double.MakeKernelName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_sse4_1_double.MakeKernelDecl": [
+                "KernelName",
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelOther",
+                "KernelVF"
+            ],
+            "make_nb_kernel_sse4_1_double.KeepKernel": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_sse4_1_double.SetDefines": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF",
+                "defines"
+            ],
+            "make_nb_kernel_sse4_1_double.PrintStatistics": [
+                "ratio"
+            ]
+        },
+        "src.gromacs.gmxlib.nonbonded.nb_kernel_avx_128_fma_double.make_nb_kernel_avx_128_fma_double": {
+            "make_nb_kernel_avx_128_fma_double.MakeKernelFileName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom"
+            ],
+            "make_nb_kernel_avx_128_fma_double.MakeKernelName": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_avx_128_fma_double.MakeKernelDecl": [
+                "KernelName",
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelOther",
+                "KernelVF"
+            ],
+            "make_nb_kernel_avx_128_fma_double.KeepKernel": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF"
+            ],
+            "make_nb_kernel_avx_128_fma_double.SetDefines": [
+                "KernelElec",
+                "KernelElecMod",
+                "KernelVdw",
+                "KernelVdwMod",
+                "KernelGeom",
+                "KernelVF",
+                "defines"
+            ],
+            "make_nb_kernel_avx_128_fma_double.PrintStatistics": [
+                "ratio"
+            ]
+        },
+        "src.gromacs.selection.tests.gensphere": {
+            "dot": [
+                "a",
+                "b"
+            ],
+            "norm": [
+                "a"
+            ],
+            "angle": [
+                "a",
+                "b"
+            ],
+            "minangle": [
+                "a",
+                "list"
+            ],
+            "get_single_vec": [],
+            "write_gro_title": [
+                "fp",
+                "title",
+                "atomcount"
+            ],
+            "write_gro_atom": [
+                "fp",
+                "resnr",
+                "resname",
+                "atomname",
+                "index",
+                "x"
+            ],
+            "write_gro_box": [
+                "fp",
+                "box"
+            ]
+        }
+    }
+}
